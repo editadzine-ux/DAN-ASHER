@@ -1,0 +1,1139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dr. Dan Asher — Knowledge Management Courses &amp; Expert Knowledge Retention</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;800;900&amp;family=Geist:wght@300;400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Mono:wght@400&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1f6f84}a:hover{color:#0c2a36}
+.da{--ink:#061019;--deep:#0c2a36;--blue:#237085;--teal:#2a8aa0;--teal2:#5fc3d6;--mint:#edf4f5;--wash:#eef3f4;--paper:#f7f5f0;--text:#0b1a24;--muted:#4a5a64;--line:rgba(11,26,36,.14);--eo:cubic-bezier(.23,1,.32,1);--eio:cubic-bezier(.77,0,.175,1);font-family:'Geist',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--text);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:clip}
+.da *{box-sizing:border-box}
+.da p{margin:0;text-wrap:pretty}
+.da h1,.da h2,.da h3,.da h4,.da figure,.da blockquote{margin:0}
+.da ul,.da ol{margin:0;padding:0}
+.wrap{max-width:1400px;margin:0 auto;padding:0 40px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;line-height:1.4}
+.bs{font-family:'Big Shoulders Display','Barlow Condensed','Arial Narrow',sans-serif}
+.display{font-family:'Big Shoulders Display','Barlow Condensed','Arial Narrow',sans-serif;font-weight:900;text-transform:uppercase;line-height:.86;letter-spacing:-.005em}
+.serif{font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:-.01em}
+.h2{font-size:clamp(52px,6.6vw,104px)}
+.lead{font-size:clamp(17px,1.45vw,20px);line-height:1.6}
+.amber{color:var(--amber)}
+.tealc{color:#1f6f84}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:54px;padding:0 28px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer;font-family:inherit;transition:transform .25s var(--eo),box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn-amber{background:var(--amber);color:#1b1204}
+.btn-amber:hover{color:#1b1204;box-shadow:0 14px 40px -12px var(--amber)}
+.btn-ink{background:var(--ink);color:#f5f2eb}
+.btn-ink:hover{color:#fff}
+.btn-line{border:1.5px solid currentColor;background:transparent;color:inherit}
+.arrow{display:inline-flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;border-bottom:1.5px solid currentColor;padding:6px 0;min-height:44px;color:inherit}
+.arrow svg{width:16px;height:16px;transition:transform .25s}
+.arrow:hover svg{transform:translateX(4px)}
+.ic{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sec{padding:120px 0}
+.sec-head{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(460px,100%),1fr));gap:28px 72px;align-items:end;margin-bottom:64px;position:relative}
+.sec-head .eyebrow{margin-bottom:22px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.rise{animation:fadeup .9s var(--eo) both;animation-delay:var(--d,0s)}
+@keyframes fadeup{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes dashflow{to{stroke-dashoffset:-16}}
+@keyframes pulse{0%,100%{transform:scale(.9);opacity:.2}50%{transform:scale(1.2);opacity:.45}}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.06)}}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(247,245,240,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hdr{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:84px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:14px;text-decoration:none}
+.logo svg{width:74px;height:auto;display:block}
+.logo-eye{width:auto;height:34px;display:block}
+.wordmark-text{display:block;font-family:'Space Grotesk',Arial,sans-serif;font-weight:700;font-size:18px;line-height:1.3;letter-spacing:-.04em;color:#070d19;white-space:nowrap}
+.wordmark-text small{display:block;font-family:'IBM Plex Mono',monospace;font-weight:400;font-size:12px;line-height:1.5;letter-spacing:.06em;margin-top:2px;color:#070d19}
+.wm{font-family:'Big Shoulders Display','Barlow Condensed',sans-serif;font-weight:800;font-size:35px;line-height:1;color:#0b0f14;letter-spacing:.005em;white-space:nowrap}
+.wm span{font-weight:400;color:#2a8aa0;margin-left:.2em}
+.logo:hover .wm{color:#0b0f14}
+.lg-lid{fill:none;stroke-width:7;stroke-linejoin:miter}
+.lg-halo{fill:none;stroke-width:15}
+.lg-iris{fill:none;stroke-width:9;stroke-dasharray:18.1 3 75.6 3 57.3 0}
+.nav{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.nav a.nl{color:var(--text);text-decoration:none;font-size:15px;font-weight:500;padding:12px 0;position:relative}
+.nav a.nl::after{content:'';position:absolute;left:0;right:0;bottom:6px;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav a.nl:hover::after{transform:scaleX(1)}
+.progress{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:transparent}
+.progress span{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--teal),var(--amber));transform-origin:left;transform:scaleX(var(--p,0))}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(ellipse 55% 50% at 80% 12%,#0f3442 0%,rgba(6,16,25,0) 70%),var(--ink);color:#eef5f6;padding:34px 0 40px}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(95,195,214,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(95,195,214,.06) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(ellipse at 50% 55%,#000 15%,transparent 72%);mask-image:radial-gradient(ellipse at 50% 55%,#000 15%,transparent 72%);pointer-events:none}
+.hero .wrap{position:relative}
+.hero-caption{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;color:#9fc3cc}
+.hero-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.62fr);align-items:center;gap:24px;margin-top:22px}
+.hero h1{font-size:clamp(64px,8.6vw,150px);color:#f3f7f8}
+.ht{display:block;overflow:hidden;padding-bottom:.02em}
+.ht > span{display:inline-block;animation:risein 1s var(--eo) both;animation-delay:var(--d)}
+@keyframes risein{from{transform:translateY(108%)}to{transform:none}}
+.deeper{display:flex;align-items:flex-start;color:var(--amber);font-size:1.1em;line-height:.95;padding-bottom:.42em}
+.deeper span{display:inline-block;transform:translateY(var(--y));animation:fall .9s cubic-bezier(.2,.9,.3,1.2) both;animation-delay:calc(.9s + var(--i) * 85ms)}
+@keyframes fall{from{opacity:0;transform:translateY(-1.2em)}to{opacity:1;transform:translateY(var(--y))}}
+.drill{display:block;width:2px;height:0;background:linear-gradient(var(--amber),rgba(255,181,71,0));margin:.5em 0 0 .1em;animation:drill 1.2s 1.7s var(--eio) forwards}
+@keyframes drill{to{height:1em}}
+.hero-eye{position:relative}
+.he-svg{width:100%;height:auto;display:block;overflow:visible}
+.he-lid{fill:none;stroke-width:20;stroke-linejoin:miter;stroke-dasharray:2000;stroke-dashoffset:2000;animation:draw 1.9s var(--eio) .15s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.he-halo{fill:none;stroke:#071721;stroke-width:46}
+.r1{fill:none;stroke-width:26;stroke-dasharray:122.1 15 503.4 15 381.2 0}
+.r2{fill:none;stroke:#c3e2e8;stroke-width:20}
+.r3{fill:none;stroke:#2a7d92;stroke-width:22}
+.gr{fill:none;stroke:rgba(143,211,224,.45);stroke-width:1.4;stroke-dasharray:2 9;transform-origin:400px 210px;animation:spin 46s linear infinite}
+.gr-rev{animation-direction:reverse;animation-duration:30s}
+.ring-in{transform-origin:400px 210px;animation:ringin 1.2s var(--eo) both;animation-delay:var(--d)}
+@keyframes ringin{from{transform:scale(.25);opacity:0}to{transform:none;opacity:1}}
+.spin-slow{transform-origin:400px 210px;animation:spin 6s linear infinite}
+.core-glow{fill:var(--amber);opacity:.28;transform-origin:400px 210px;animation:pulse 2.8s ease-in-out infinite}
+.glint{fill:#fff;opacity:.85}
+.track{transition:transform .6s var(--eo);transform:translate(calc(var(--mx,0) * 52px),calc(var(--my,0) * 30px))}
+.blink{transform-origin:400px 210px;animation:blink 7s 3.6s infinite}
+.pt{fill:#ffd27f;opacity:0;animation:suck 3.8s cubic-bezier(.55,0,.8,.3) infinite;animation-delay:var(--d)}
+@keyframes suck{0%{transform:translate(var(--dx),var(--dy));opacity:0}18%{opacity:1}100%{transform:translate(0,0);opacity:0}}
+.hero-context{display:flex;justify-content:space-between;align-items:flex-start;gap:20px 40px;flex-wrap:wrap;padding:22px 0 26px;border-bottom:1px solid rgba(237,244,245,.22);animation:fadeup 1s 1.3s both}
+.hero-context p{font-size:18px;line-height:1.55;color:#dbe8eb;max-width:560px}
+.hero-course-link{display:inline-block;margin-left:18px;color:var(--amber);font-weight:600;border-bottom:1.5px solid var(--amber);text-decoration:none;white-space:nowrap}
+.hero-course-link:hover{color:#fff}
+
+/* onion model */
+.expertise-card{display:grid;grid-template-columns:minmax(0,1fr) 370px;gap:40px;margin-top:26px;align-items:start}
+.model-stage{min-width:0;position:relative}
+.model-figure-caption{display:flex;justify-content:space-between;gap:20px;font-size:12px;font-weight:600;letter-spacing:.18em;color:#9fc3cc}
+.model-figure-caption span:first-child{color:var(--amber)}
+.onion-svg{width:100%;height:520px;overflow:visible;display:block}
+.model-layer{transform-box:view-box;transform-origin:210px 170px;transition:transform 800ms var(--eio),opacity 220ms ease,filter .3s;cursor:pointer}
+.model-layer:hover{filter:brightness(1.12)}
+.shell-depth{fill:#02080d;opacity:.4}
+.ring{stroke:#fff;stroke-opacity:.5;stroke-width:1;transition:stroke-opacity .16s ease}
+.ring.selected{stroke:var(--amber);stroke-opacity:1;stroke-width:2.4;stroke-dasharray:7 5;animation:dashflow 1.1s linear infinite;filter:drop-shadow(0 0 7px rgba(255,181,71,.85))}
+.shell-number{font:600 12px 'Geist',sans-serif;fill:#1b5265;letter-spacing:.08em}
+.model-layer-2 .shell-number{fill:#fff}
+.core-label{font:800 15px 'Big Shoulders Display',sans-serif;fill:#1b5265;letter-spacing:.06em}
+.core-number{font:600 8px 'Geist',sans-serif;fill:#1b5265;letter-spacing:.14em}
+.core-halo{fill:var(--amber);transform-box:fill-box;transform-origin:center;animation:pulse 2.6s ease-in-out infinite}
+.model-guides{fill:none;stroke:#5fc3d6;stroke-opacity:.28}
+.model-guides .march{stroke-dasharray:2 9;animation:dashflow 2.4s linear infinite}
+.scan{fill:url(#scanG);animation:scan 5.5s var(--eio) 2.2s infinite;opacity:0}
+@keyframes scan{0%{transform:translateY(0);opacity:0}8%{opacity:1}85%{opacity:1}100%{transform:translateY(560px);opacity:0}}
+.model-annotations{transition:opacity .25s ease}
+.model-annotations path{fill:none;stroke:#edf4f5;stroke-width:1;stroke-dasharray:240;stroke-dashoffset:240;animation:drawl 1.1s var(--eio) forwards;animation-delay:var(--d)}
+@keyframes drawl{to{stroke-dashoffset:0}}
+.model-annotations circle{fill:var(--amber);transform-box:fill-box;transform-origin:center;animation:ping2 2.4s ease-out infinite;animation-delay:var(--d)}
+@keyframes ping2{0%{transform:scale(1)}30%{transform:scale(1.9)}60%,100%{transform:scale(1)}}
+.model-annotations text{font:600 16px 'Geist',sans-serif;letter-spacing:.12em;fill:#fff;animation:fadein .6s both;animation-delay:var(--d)}
+.model-annotations text.end{text-anchor:end}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+.mpt{fill:#bfe6ee;opacity:0;animation:suck2 4.2s cubic-bezier(.55,0,.8,.3) infinite;animation-delay:var(--d)}
+@keyframes suck2{0%{transform:translate(var(--dx),var(--dy));opacity:0}15%{opacity:.9}100%{transform:translate(0,0);opacity:0}}
+.arrive .model-layer-0{animation:arr0 1s var(--eo) .45s backwards}
+.arrive .model-layer-1{animation:arr1 1s var(--eo) .52s backwards}
+.arrive .model-layer-2{animation:arr2 1s var(--eo) .59s backwards}
+.arrive .model-layer-3{animation:arr3 1s var(--eo) .66s backwards}
+@keyframes arr0{0%{opacity:.1;transform:translate(-47px,15px) rotate(-12deg) scale(.96)}78%{opacity:1;transform:translate(3px,-3px) rotate(1deg)}100%{opacity:1;transform:none}}
+@keyframes arr1{0%{opacity:.1;transform:translate(35px,-24px) rotate(9deg) scale(.96)}78%{opacity:1;transform:translate(-3px,2px) rotate(-1deg)}100%{opacity:1;transform:none}}
+@keyframes arr2{0%{opacity:.1;transform:translate(-20px,34px) rotate(-9deg) scale(.96)}78%{opacity:1;transform:translate(2px,-2px) rotate(1deg)}100%{opacity:1;transform:none}}
+@keyframes arr3{0%{opacity:.1;transform:translate(40px,23px) rotate(11deg) scale(.96)}78%{opacity:1;transform:translate(-2px,-2px) rotate(-1deg)}100%{opacity:1;transform:none}}
+.model-exploded .model-layer-0{transform:translate(-31px,-24px) rotate(-7deg)}
+.model-exploded .model-layer-1{transform:translate(-11px,-6px) rotate(-3deg)}
+.model-exploded .model-layer-2{transform:translate(17px,13px) rotate(3deg)}
+.model-exploded .model-layer-3{transform:translate(49px,34px) rotate(7deg)}
+.model-exploded .model-annotations{opacity:.2}
+.peel-1 .model-layer-0,.peel-2 .model-layer-0,.peel-3 .model-layer-0{transform:translate(-34px,-27px) rotate(-9deg);opacity:.42}
+.peel-2 .model-layer-1,.peel-3 .model-layer-1{transform:translate(-16px,-12px) rotate(-5deg);opacity:.56}
+.peel-3 .model-layer-2{transform:translate(17px,13px) rotate(4deg);opacity:.65}
+.peel-3 .model-layer-3{transform:translate(43px,30px) rotate(6deg)}
+.peel-1 .model-annotations,.peel-2 .model-annotations,.peel-3 .model-annotations{opacity:.2}
+.model-tools{display:flex;gap:12px 22px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:4px}
+.model-btns{display:flex;gap:10px;flex-wrap:wrap}
+.model-control{display:inline-flex;align-items:center;gap:11px;min-height:46px;padding:10px 18px;border-radius:999px;background:transparent;border:1.5px solid rgba(211,226,231,.5);color:#fff;font:500 14px 'Geist',sans-serif;cursor:pointer;transition:background .16s,color .16s,border-color .16s}
+.model-control svg{width:20px;height:20px;stroke:currentColor;stroke-width:1.6;fill:none;stroke-linejoin:round}
+.model-control:hover{background:rgba(255,255,255,.08)}
+.model-control.on{background:var(--amber);color:#1b1204;border-color:var(--amber)}
+.model-play.on svg{animation:pulse 1.2s ease-in-out infinite}
+.figure-note{font-size:11px;letter-spacing:.18em;font-weight:600;color:#9fc3cc;max-width:260px;text-align:right}
+.model-reading{padding:8px 0 0 26px;border-left:1px solid rgba(237,244,245,.22)}
+.reading-heading{display:flex;justify-content:space-between;gap:15px;align-items:flex-start;margin-bottom:24px}
+.reading-heading h2{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;line-height:.95;text-transform:uppercase}
+.reading-heading h2 .serif{color:var(--amber);font-size:1.15em}
+.model-index{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:16px;border:1.5px solid rgba(211,226,231,.6);border-radius:50%;width:40px;height:40px;display:grid;place-items:center;flex:0 0 40px}
+.layer-tabs{display:grid;gap:6px}
+.layer-tab{appearance:none;display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:12px;min-height:52px;border:0;border-bottom:1px solid rgba(255,255,255,.18);border-radius:12px;background:transparent;color:#fff;padding:9px 12px;text-align:left;cursor:pointer;font-family:inherit;transition:background .2s,color .2s}
+.layer-tab > span{font-size:12px;font-weight:600;opacity:.75}
+.layer-tab strong{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;text-transform:uppercase;white-space:nowrap}
+.layer-tab small{font-size:12px;line-height:1.35;color:#cfe0e4;max-width:140px;text-align:right}
+.layer-tab:hover{background:rgba(255,255,255,.07)}
+.layer-tab.on{background:var(--mint);color:#1b5265;border-color:var(--mint)}
+.layer-tab.on small{color:#1b5265}
+.layer-panel{padding-top:24px;min-height:280px}
+.layer-panel h3{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:28px;text-transform:uppercase}
+.layer-question{font-family:'Instrument Serif',serif;font-style:italic;font-size:32px;line-height:1.1;color:var(--amber);margin-top:6px}
+.layer-description{font-size:16px;line-height:1.6;color:#dbe8eb;margin-top:14px}
+.layer-method{padding-top:14px;border-top:1px solid rgba(255,255,255,.22);margin-top:18px;font-size:14px;line-height:1.55;color:#dbe8eb}
+.layer-method strong{display:block;font-size:11px;letter-spacing:.18em;font-weight:600;color:#9fc3cc;margin-bottom:6px}
+.swap{animation:fadeup .45s var(--eo) both}
+.hero-bottom{display:flex;align-items:center;justify-content:space-between;gap:24px 45px;flex-wrap:wrap;margin-top:28px;border-top:1px solid rgba(237,244,245,.22);padding-top:26px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center}
+.hero-bottom > p{font-size:13px;line-height:1.7;color:#9fc3cc;text-align:right;max-width:360px}
+.hero-bottom > p a{color:#dbe8eb}
+
+/* intro + credibility */
+.dan-introduction{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:40px;align-items:center;padding:64px 40px}
+.pt-wrap{position:relative;width:180px;aspect-ratio:1;display:block}
+.pt-wrap img{position:absolute;inset:12px;width:calc(100% - 24px);height:calc(100% - 24px);border-radius:50%;object-fit:cover;object-position:50% 22%;background:#e9eef0}
+.pt-ring{position:absolute;inset:0;width:100%;height:100%;animation:spin 30s linear infinite}
+.pt-ring circle{fill:none}
+.dan-introduction h2{font-size:clamp(44px,4.4vw,64px);margin:10px 0 12px}
+.dan-introduction p.lead{color:#24343e;max-width:720px}
+.credibility-strip{background:var(--wash);border-block:1px solid var(--line)}
+.cred-inner{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:24px 40px;padding:32px 40px}
+.cred-inner > div{display:flex;align-items:center;gap:22px}
+.cred-inner strong{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:40px;line-height:.9;text-transform:uppercase;color:#0c2a36;max-width:190px;flex-shrink:0}
+.cred-inner > div:first-child strong{font-size:72px}
+.cred-inner span{font-size:14px;line-height:1.5;color:var(--muted);max-width:220px}
+
+/* expertise */
+.knowledge-transfer{position:relative;background:var(--wash);border-radius:30px;padding:32px 40px 40px;margin-bottom:80px;overflow:hidden}
+.transfer-caption{display:flex;justify-content:space-between;gap:16px 30px;align-items:center;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:22px}
+.transfer-caption p{font-family:'Instrument Serif',serif;font-style:italic;font-size:24px;line-height:1.2;max-width:520px;text-align:right}
+.jr{position:relative;margin-top:36px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;list-style:none}
+.jr-track{position:absolute;top:56px;left:12.5%;right:12.5%;height:2px;background:repeating-linear-gradient(90deg,#2a8aa0 0 10px,transparent 10px 18px);animation:bgflow 1s linear infinite}
+@keyframes bgflow{to{background-position:18px 0}}
+.pk{position:absolute;top:-6px;left:0;width:14px;height:14px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 6px rgba(255,181,71,.22);animation:travel 5.4s cubic-bezier(.45,0,.55,1) infinite;animation-delay:var(--d)}
+@keyframes travel{0%{left:0;opacity:0}10%{opacity:1}90%{opacity:1}100%{left:100%;opacity:0}}
+.jn{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px}
+.jn-node{width:112px;height:112px;border-radius:50%;background:var(--ink);display:grid;place-items:center;color:#7fd0df;box-shadow:0 0 0 10px var(--wash);transition:transform .35s var(--eo)}
+.jn:hover .jn-node{transform:scale(1.06)}
+.jn-node svg{width:58px;height:58px}
+.jn-node svg *{fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.jn:last-child .jn-node{background:var(--amber);color:#1b1204}
+.jn h3{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:28px;text-transform:uppercase;line-height:1;margin-top:6px}
+.jn p{color:var(--muted);font-size:15px;line-height:1.55}
+.retention-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:56px 90px;align-items:start}
+.section-number{display:block;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:180px;line-height:.75;color:transparent;-webkit-text-stroke:2px #2a8aa0;margin-bottom:24px}
+.retention-intro h3{font-size:clamp(40px,4vw,58px);margin-bottom:22px}
+.retention-intro p{color:#24343e;max-width:480px}
+.retention-intro .arrow{margin-top:24px}
+.rd{display:grid;grid-template-columns:80px 1fr;gap:6px 20px;padding:26px 0;border-top:1.5px solid var(--text)}
+.rd:last-child{border-bottom:1.5px solid var(--text)}
+.rd span{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:56px;line-height:.8;color:#2a8aa0;grid-row:span 2}
+.rd h4{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:28px;text-transform:uppercase}
+.rd p{color:var(--muted);font-size:16px;line-height:1.6}
+.outputs-line{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px}
+.outputs-line > span{font-size:12px;letter-spacing:.22em;font-weight:600;text-transform:uppercase;color:#1f6f84}
+.outputs-line > div{display:flex;gap:10px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border-radius:999px;border:1.5px solid var(--text);font-size:14px;font-weight:500}
+
+/* training */
+.training{position:relative;background:var(--ink);color:#eef5f6;padding:130px 0 120px}
+.training::before{content:'';position:absolute;right:-240px;top:-240px;width:760px;height:760px;border-radius:50%;border:1px solid rgba(255,181,71,.14);box-shadow:0 0 0 90px rgba(255,181,71,.03),0 0 0 180px rgba(255,181,71,.02);pointer-events:none}
+.training .sec-head .lead{color:#c3d4d9}
+.training-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:16px 40px;flex-wrap:wrap;margin-bottom:32px}
+.training-intro p{font-size:17px;line-height:1.6;color:#dbe8eb;max-width:720px}
+.training-intro span{font-size:12px;letter-spacing:.18em;font-weight:600;color:var(--amber);max-width:260px;text-align:right;text-transform:uppercase}
+.program-navigation{position:sticky;top:84px;z-index:20;padding:18px 0 20px;background:rgba(6,16,25,.94);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12)}
+.pn-head{display:flex;justify-content:space-between;gap:16px;font-size:12px;letter-spacing:.2em;font-weight:600;color:#9fc3cc}
+.pn-head span:last-child{color:var(--amber)}
+.program-links{display:flex;gap:8px;margin-top:14px;overflow-x:auto;padding-bottom:2px}
+.program-links a{flex:1 0 auto;display:flex;align-items:center;gap:10px;min-height:48px;padding:6px 16px 6px 8px;border-radius:999px;border:1.5px solid rgba(255,255,255,.18);color:#eef5f6;text-decoration:none;font-size:14px;font-weight:500;white-space:nowrap;transition:background .2s,border-color .2s,color .2s}
+.program-links a svg{width:34px;height:34px;flex:none}
+.program-links a svg *{fill:none;stroke:#7fd0df;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.program-links a:hover{border-color:var(--amber)}
+.program-links a.cur{background:var(--amber);border-color:var(--amber);color:#1b1204}
+.program-links a.cur svg *{stroke:#1b1204}
+.course-atlas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:28px;align-items:start}
+.course{position:relative;border-radius:26px;border:1px solid rgba(255,255,255,.13);background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.012));scroll-margin-top:200px;transition:border-color .3s,box-shadow .35s,transform .35s var(--eo)}
+.course:hover{border-color:rgba(255,181,71,.55)}
+.course.featured,.course.open{grid-column:1/-1}
+.course.open{border-color:var(--amber);box-shadow:0 0 0 1px var(--amber),0 40px 90px -40px rgba(255,181,71,.5)}
+.course-sum{appearance:none;width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"id art" "sum sum" "out out" "act act";gap:20px;padding:30px;border:0;background:transparent;color:inherit;text-align:left;font-family:inherit;cursor:pointer;border-radius:26px}
+.featured .course-sum{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr) auto;grid-template-areas:"id id art" "sum out art" "act act act";gap:24px 48px;padding:40px}
+.course-identity{grid-area:id;display:flex;align-items:flex-end;gap:18px}
+.course-sequence{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:118px;line-height:.75;color:transparent;-webkit-text-stroke:1.5px rgba(255,181,71,.8);transition:color .35s}
+.course:hover .course-sequence,.course.open .course-sequence{color:var(--amber)}
+.course-number{font-size:12px;letter-spacing:.22em;font-weight:600;color:#9fc3cc;padding-bottom:6px}
+.course-art{grid-area:art;align-self:start;justify-self:end}
+.course-glyph{width:96px;height:96px;color:#7fd0df;display:block}
+.featured .course-glyph{width:150px;height:150px}
+.course-glyph *{fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.course-glyph .sp{transform-origin:44px 44px;animation:spin 14s linear infinite}
+.course-glyph .fl{stroke-dasharray:3 5;animation:dashflow 1.4s linear infinite}
+.course-glyph .am{stroke:var(--amber)}
+.course-summary{grid-area:sum;display:flex;flex-direction:column;gap:12px}
+.course-type{font-size:12px;letter-spacing:.2em;font-weight:600;color:var(--amber)}
+.course-title{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:40px;line-height:.95;text-transform:uppercase;color:#fff}
+.featured .course-title{font-size:clamp(48px,5vw,72px)}
+.course-preview{font-size:16px;line-height:1.6;color:#bccdd3;max-width:620px}
+.course-outcome{grid-area:out;display:flex;flex-direction:column;gap:6px;border-top:1px dashed rgba(255,255,255,.22);padding-top:16px;font-size:15px;line-height:1.55;color:#dbe8eb}
+.featured .course-outcome{border-top:0;border-left:1px dashed rgba(255,255,255,.22);padding:0 0 0 32px;justify-content:center}
+.course-outcome small{font-size:11px;letter-spacing:.2em;font-weight:600;color:#9fc3cc}
+.course-action{grid-area:act;display:flex;justify-content:space-between;align-items:center;min-height:54px;padding:0 10px 0 20px;border-radius:16px;background:rgba(255,255,255,.07);font-weight:600;font-size:15px;transition:background .25s,color .25s}
+.course-sum:hover .course-action,.course.open .course-action{background:var(--amber);color:#1b1204}
+.course-toggle{position:relative;width:36px;height:36px;border-radius:50%;border:1.5px solid currentColor}
+.course-toggle i{position:absolute;left:10px;right:10px;top:50%;height:1.5px;margin-top:-.75px;background:currentColor;transition:transform .25s var(--eo),opacity .2s}
+.course-toggle i + i{transform:rotate(90deg)}
+.course.open .course-toggle i + i{transform:none;opacity:0}
+.course-body{padding:0 30px 34px;animation:fadeup .5s var(--eo) both}
+.featured .course-body{padding:0 40px 40px}
+.project-flow{margin-bottom:28px;padding:26px;border-radius:20px;background:rgba(127,208,223,.08);border:1px solid rgba(127,208,223,.3)}
+.flow-heading{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;margin-bottom:20px}
+.flow-heading span{font-size:12px;letter-spacing:.2em;font-weight:600;color:#7fd0df}
+.flow-heading strong{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;font-size:22px}
+.project-flow ol{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(170px,100%),1fr));gap:8px}
+.project-flow li{background:var(--ink);padding:18px 22px 18px 34px;display:flex;flex-direction:column;gap:6px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%,16px 50%)}
+.project-flow li:first-child{clip-path:polygon(0 0,calc(100% - 16px) 0,100% 50%,calc(100% - 16px) 100%,0 100%);padding-left:22px}
+.project-flow li span{font-size:12px;letter-spacing:.2em;font-weight:600;color:var(--amber)}
+.project-flow li strong{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;text-transform:uppercase;line-height:1}
+.course-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:32px 56px;border-radius:22px;background:var(--paper);color:var(--text);padding:clamp(24px,3.4vw,44px)}
+.course-explanation{display:flex;flex-direction:column;gap:18px}
+.course-explanation > p:first-child{font-size:17px;line-height:1.7;color:#24343e}
+.course-audience{font-size:15px;line-height:1.55;color:var(--muted)}
+.course-audience strong{color:var(--text)}
+.course-explanation .arrow{align-self:flex-start;color:var(--text)}
+.course-learning h3{font-size:12px;letter-spacing:.22em;font-weight:700;text-transform:uppercase;margin-bottom:6px}
+.lf{list-style:none;display:flex;flex-direction:column}
+.lf li{display:grid;grid-template-columns:40px 1fr;gap:10px;padding:14px 0;border-top:1px solid var(--line);font-size:16px;line-height:1.45}
+.lf li span{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:20px;color:#2a8aa0}
+.aw{margin-top:18px;background:var(--amber);color:#1b1204;border-radius:18px;padding:18px 22px;font-size:15px;line-height:1.5}
+.aw strong{display:block;font-size:11px;letter-spacing:.2em;margin-bottom:4px}
+.training-delivery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:28px 48px;align-items:center;margin-top:56px;padding-top:40px;border-top:1px solid rgba(255,255,255,.14)}
+.training-delivery h3{font-size:clamp(36px,3.4vw,50px)}
+.training-delivery > p{color:#c3d4d9;font-size:16px;line-height:1.6}
+.training-delivery .btn{justify-self:end}
+
+/* approach */
+.process{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:32px;position:relative}
+.process-line{position:absolute;left:60px;right:20%;top:60px;height:2px;background:repeating-linear-gradient(90deg,#2a8aa0 0 10px,transparent 10px 18px);animation:bgflow 1s linear infinite}
+.process li{position:relative;z-index:1}
+.pg{position:relative;width:120px;height:120px;border-radius:28px;background:var(--deep);display:grid;place-items:center;margin-bottom:24px;transition:transform .4s var(--eo)}
+.process li:hover .pg{transform:rotate(-6deg) scale(1.05)}
+.pg svg{width:76px;height:76px}
+.pg svg *{fill:none;stroke:#bfe6ee;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.pg .sp{transform-origin:44px 44px;animation:spin 12s linear infinite}
+.pg .fl{stroke-dasharray:3 5;animation:dashflow 1.4s linear infinite}
+.pg .am{stroke:var(--amber)}
+.pg b{position:absolute;top:-10px;right:-10px;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:16px;background:var(--amber);color:#1b1204;border-radius:999px;padding:5px 10px}
+.process h3{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:40px;text-transform:uppercase;line-height:.9;margin-bottom:12px}
+.process p{font-size:16px;line-height:1.6;color:var(--muted)}
+.research-callout{margin-top:80px;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:32px 48px;align-items:center;background:var(--ink);color:#eef5f6;border-radius:30px;padding:clamp(28px,4vw,52px)}
+.research-symbol svg{width:120px;height:120px}
+.research-symbol circle{fill:none;stroke:#7fd0df;stroke-width:1.4;transform-origin:40px 40px;animation:ripple 3.2s ease-in-out infinite;animation-delay:var(--d)}
+.research-symbol circle.c{fill:var(--amber);stroke:none}
+@keyframes ripple{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.08);opacity:.6}}
+.research-callout h3{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(34px,3.4vw,48px);text-transform:uppercase;line-height:.92;margin:12px 0 14px}
+.research-callout p.body{color:#c3d4d9;font-size:16px;line-height:1.6;max-width:760px}
+.research-callout .arrow{color:var(--amber);margin-top:16px}
+.publication-note{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:20px;letter-spacing:.06em;line-height:1.05;color:#8fd3e0;text-transform:uppercase}
+.publication-note b{display:block;font-size:96px;font-weight:900;color:var(--amber);line-height:.85;margin-top:8px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:72px;align-items:start}
+.dan-portrait{position:relative;border-radius:30px;overflow:hidden;aspect-ratio:4/4.4;background:#e9eef0}
+.dan-portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;display:block}
+.dan-portrait figcaption{position:absolute;left:16px;right:16px;bottom:16px;display:flex;justify-content:space-between;gap:8px 12px;flex-wrap:wrap;padding:14px 18px;border-radius:16px;background:rgba(6,16,25,.84);color:#fff;font-size:13px;backdrop-filter:blur(8px)}
+.dan-portrait figcaption strong{font-family:'Big Shoulders Display',sans-serif;font-size:20px;text-transform:uppercase;letter-spacing:.02em}
+.dan-quote{margin-top:40px;font-family:'Instrument Serif',serif;font-style:italic;font-size:clamp(32px,3.2vw,48px);line-height:1.06}
+.dan-quote::before{content:'“';display:block;font-size:2.4em;line-height:.6;color:#2a8aa0;margin-bottom:8px}
+.dan-quote cite{display:block;margin-top:18px;font-family:'Geist',sans-serif;font-style:normal;font-size:12px;letter-spacing:.2em;font-weight:600;color:var(--muted);text-transform:uppercase}
+.portrait-signature{margin-top:28px;font-size:12px;letter-spacing:.22em;font-weight:600;color:#1f6f84}
+.about-copy{display:flex;flex-direction:column;gap:18px}
+.about-copy p{font-size:17px;line-height:1.72;color:#24343e}
+.about-copy p.about-lead{font-size:clamp(20px,1.7vw,24px);line-height:1.5;color:var(--text)}
+.about-copy h2{margin-bottom:8px}
+.about-subheading{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:30px;text-transform:uppercase;margin-top:14px}
+.pracad{font-family:'Instrument Serif',serif;font-style:italic;font-size:1.2em}
+.about-example{padding:22px 24px;border-radius:20px;background:var(--wash)}
+.about-principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(170px,100%),1fr));gap:16px;margin-top:10px}
+.about-principles div{border-top:1.5px solid var(--text);padding-top:14px;display:flex;flex-direction:column;gap:6px}
+.about-principles span{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:32px;color:#2a8aa0;line-height:.9}
+.about-principles strong{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;text-transform:uppercase}
+.about-principles p{font-size:15px;line-height:1.5;color:var(--muted)}
+.about-links{display:flex;gap:12px 32px;flex-wrap:wrap;margin-top:6px}
+.professional-credentials{margin-top:120px;padding-top:80px;border-top:1px solid var(--line)}
+.credentials-heading{display:flex;flex-direction:column;gap:18px;margin-bottom:48px}
+.credentials-heading h3{font-size:clamp(42px,4.6vw,72px)}
+.credentials-grid,.credential-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(460px,100%),1fr));gap:20px}
+.credential-gallery{margin-top:20px}
+.credential{background:var(--wash);border-radius:26px;padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:16px}
+.credential-label{font-size:11px;letter-spacing:.2em;font-weight:700;color:#1f6f84}
+.credential h4{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:36px;text-transform:uppercase;line-height:.92}
+.credential p{font-size:16px;line-height:1.6;color:#24343e}
+.publication-links{list-style:none;display:flex;flex-direction:column}
+.publication-links li{display:flex;flex-direction:column;gap:4px;padding:16px 0;border-top:1px solid var(--line)}
+.publication-links a{font-weight:600;font-size:17px;color:var(--text)}
+.publication-links span{font-size:14px;color:var(--muted)}
+.international-topics{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.international-topics li{display:inline-flex;min-height:36px;align-items:center;padding:0 14px;border-radius:999px;background:#fff;font-size:14px}
+.credential-links{display:flex;flex-wrap:wrap;gap:8px 28px}
+.credential.dark{background:var(--ink);color:#eef5f6;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:24px;align-items:center;padding:22px}
+.credential.dark .credential-label{color:var(--amber)}
+.credential.dark p{color:#c3d4d9}
+.credential.dark .meta{font-size:13px;color:#8fb6c0}
+.credential.dark .arrow{color:var(--amber);align-self:flex-start}
+.credential.dark .ctext{display:flex;flex-direction:column;gap:12px;padding:8px}
+.credential-image{display:block;border-radius:18px;overflow:hidden;background:#fff;aspect-ratio:4/5}
+.credential-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.credential-image.contain img{object-fit:contain}
+.credential-image:hover img{transform:scale(1.04)}
+.conference-session{font-family:'Instrument Serif',serif;font-style:italic;font-size:22px;line-height:1.2;color:#fff !important}
+
+/* services */
+.services{position:relative;background:var(--deep);color:#eef5f6;padding:130px 0 140px;overflow:hidden}
+.services .sec-head .lead{color:#c3d4d9}
+.service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:20px;align-items:start}
+.service{margin-top:var(--lift);display:flex;flex-direction:column;gap:16px;padding:30px 28px;border-radius:26px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);transition:transform .35s var(--eo),background .3s}
+.service:hover{transform:translateY(-6px);background:rgba(255,255,255,.08)}
+.service.hot{background:var(--amber);color:#1b1204;border-color:var(--amber)}
+.service-big{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:96px;line-height:.8;opacity:.2}
+.service-index{font-size:12px;letter-spacing:.2em;font-weight:600;color:#8fd3e0}
+.service.hot .service-index{color:#4a3000}
+.service h3{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(28px,2.5vw,38px);text-transform:uppercase;line-height:.92;overflow-wrap:break-word;hyphens:auto}
+.service p{font-size:15px;line-height:1.55;color:#c3d4d9}
+.service.hot p{color:#2b1d02}
+.service ul{list-style:none;display:flex;flex-direction:column;gap:10px;font-size:14px;line-height:1.4}
+.service li{display:grid;grid-template-columns:18px 1fr;gap:10px}
+.service li::before{content:'';width:10px;height:10px;margin-top:4px;border-radius:50%;border:2px solid currentColor}
+.service .arrow{align-self:flex-start;margin-top:8px}
+
+/* priorities */
+.audience-layout{display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,2fr);gap:20px}
+.audience-tabs{display:flex;flex-direction:column;gap:8px}
+.atab{appearance:none;display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;padding:20px 22px;min-height:76px;border-radius:18px;border:1.5px solid var(--line);background:transparent;color:var(--text);cursor:pointer;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:26px;text-transform:uppercase;line-height:1;transition:background .25s,border-color .25s}
+.atab span{font-family:'Geist',sans-serif;font-weight:400;font-size:14px;text-transform:none;color:var(--muted)}
+.atab:hover{border-color:var(--text)}
+.atab.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.atab.on span{color:#8fb6c0}
+.audience-panel{background:var(--ink);color:#eef5f6;border-radius:30px;padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;gap:20px;min-height:420px}
+.audience-panel h3{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(40px,4.2vw,62px);text-transform:uppercase;line-height:.9}
+.audience-panel > p:not(.eyebrow){color:#c3d4d9;font-size:18px;line-height:1.6;max-width:640px}
+.audience-panel ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:12px}
+.audience-panel li{padding:18px;border-radius:16px;background:rgba(255,255,255,.06);font-size:15px;line-height:1.45}
+.audience-panel li span{display:block;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:26px;color:var(--amber);margin-bottom:6px}
+.audience-panel .btn{align-self:flex-start;margin-top:auto}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(400px,100%),1fr));gap:40px 72px;align-items:start}
+.faq-heading .eyebrow{margin-bottom:22px}
+.faq-list details{border-top:1.5px solid var(--text)}
+.faq-list details:last-child{border-bottom:1.5px solid var(--text)}
+.faq-list summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;cursor:pointer;font-size:20px;font-weight:600;line-height:1.35;min-height:44px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary i{flex:none;width:40px;height:40px;border-radius:50%;border:1.5px solid var(--text);position:relative;transition:transform .3s,background .3s}
+.faq-list summary i::before,.faq-list summary i::after{content:'';position:absolute;left:50%;top:50%;width:14px;height:1.5px;background:currentColor;transform:translate(-50%,-50%)}
+.faq-list summary i::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq-list details[open] summary i{transform:rotate(45deg);background:var(--amber);border-color:var(--amber)}
+.faq-list details p{padding:0 56px 28px 0;font-size:17px;line-height:1.65;color:#24343e}
+
+/* contact */
+.contact{position:relative;background:var(--ink);color:#eef5f6;padding:140px 0;overflow:hidden}
+.ct-eye{position:absolute;left:-6%;bottom:-12%;width:min(760px,70%);opacity:.12;pointer-events:none}
+.ct-eye svg{width:100%;height:auto;display:block}
+.ct-blink{transform-origin:80px 36px;animation:blink 6s 1s infinite}
+.ct-iris{transform-origin:80px 36px;animation:spin 24s linear infinite}
+.contact-inner{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:56px;align-items:end}
+.contact-inner h2{font-size:clamp(60px,7.6vw,124px);margin-top:22px}
+.contact-inner .lead{color:#c3d4d9;margin-top:28px;max-width:580px}
+.contact-options{display:flex;flex-direction:column;gap:16px;padding:clamp(24px,3vw,40px);border-radius:30px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(6px)}
+.contact-monogram{display:flex;align-items:center;gap:18px;margin-bottom:6px}
+.contact-monogram svg{width:84px;height:84px}
+.contact-monogram circle{fill:none;stroke:#7fd0df;stroke-width:1.5;transform-origin:50px 50px;animation:ripple 3.2s ease-in-out infinite;animation-delay:var(--d)}
+.contact-monogram circle.c{fill:var(--amber);stroke:none}
+.contact-monogram span{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:22px;line-height:1;letter-spacing:.04em;color:#8fd3e0}
+.contact-options .big{font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:clamp(28px,2.8vw,40px);color:#fff;text-decoration:none;line-height:1;word-break:break-word}
+.contact-options .big:hover{color:var(--amber)}
+.contact-note{font-size:13px;color:#8fb6c0;line-height:1.5}
+.copy-email{appearance:none;align-self:flex-start;background:none;border:0;border-bottom:1.5px solid currentColor;color:#dbe8eb;font:600 14px 'Geist',sans-serif;padding:8px 0;min-height:44px;cursor:pointer}
+.copy-email:hover{color:var(--amber)}
+.copy-status{font-size:13px;color:var(--amber);min-height:18px}
+
+/* footer */
+.site-footer{background:#03090e;color:#c3d4d9;padding:48px 0 36px}
+.footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px 32px}
+.footer-inner strong{display:block;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:28px;text-transform:uppercase;color:#fff}
+.footer-inner span.tag{font-size:14px;color:#8396a0}
+.footer-links{display:flex;flex-wrap:wrap;gap:4px 24px;align-items:center}
+.footer-links a,.footer-links button{color:#c3d4d9;text-decoration:none;font:400 15px 'Geist',sans-serif;padding:10px 0;background:none;border:0;cursor:pointer}
+.footer-links a:hover,.footer-links button:hover{color:var(--amber)}
+.footer-inner small{font-size:13px;color:#8396a0}
+.privacy{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background:rgba(3,9,14,.6);backdrop-filter:blur(4px)}
+.privacy-box{width:min(560px,100%);background:var(--paper);color:var(--text);border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:14px;animation:fadeup .4s var(--eo) both}
+.privacy-top{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.privacy-top h2{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:32px;text-transform:uppercase}
+.privacy-top button{appearance:none;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--text);background:none;font-size:22px;cursor:pointer;color:var(--text)}
+.privacy-box p{font-size:15px;line-height:1.6;color:#24343e}
+
+@media (max-width:1100px){
+.expertise-card{grid-template-columns:1fr}
+.model-reading{border-left:0;border-top:1px solid rgba(237,244,245,.22);padding:26px 0 0}
+.service{margin-top:0}
+.about-grid{grid-template-columns:1fr}
+.audience-layout{grid-template-columns:1fr}
+.featured .course-sum{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"id art" "sum sum" "out out" "act act"}
+.featured .course-outcome{border-left:0;border-top:1px dashed rgba(255,255,255,.22);padding:16px 0 0}
+}
+@media (max-width:900px){
+.hero-top{grid-template-columns:1fr}
+.hero-eye{max-width:520px;width:100%;justify-self:center}
+.nav a.nl{display:none}
+.course-atlas{grid-template-columns:1fr}
+.jr{grid-template-columns:1fr 1fr;row-gap:44px}
+.jr-track,.process-line{display:none}
+.dan-introduction{grid-template-columns:1fr;justify-items:start;padding:56px 20px}
+.research-callout{grid-template-columns:1fr}
+.onion-svg{height:430px}
+}
+@media (max-width:640px){
+.wrap{padding:0 20px}
+.cred-inner{padding:28px 20px}
+.wm{font-size:28px}.logo svg{width:58px}.logo-eye{height:28px}
+.jr{grid-template-columns:1fr}
+.onion-svg{height:300px;width:calc(100% + 32px);margin-left:-16px}
+.model-annotations,.figure-note{display:none}
+.layer-tabs{grid-template-columns:1fr 1fr}
+.layer-tab{grid-template-columns:22px 1fr;min-height:76px;border:1px solid rgba(255,255,255,.2);align-items:start}
+.layer-tab small{grid-column:2;text-align:left;max-width:none}
+.knowledge-transfer{padding:26px 20px}
+.transfer-caption p{text-align:left}
+.section-number{font-size:130px}
+.rd{grid-template-columns:56px 1fr}
+.rd span{font-size:42px}
+.course-sum,.featured .course-sum{padding:24px}
+.course-body,.featured .course-body{padding:0 16px 20px}
+.course-sequence{font-size:90px}
+.faq-list details p{padding-right:0}
+.sec,.training,.services,.contact{padding-top:90px;padding-bottom:90px}
+.hero-course-link{margin-left:0;margin-top:8px}
+.hero-bottom > p{text-align:left}
+}
+.still *,.still *::before,.still *::after{animation:none !important;transition:none !important}
+.still .he-lid{stroke-dashoffset:0}
+.still .drill{height:1em}
+.still .model-annotations path{stroke-dashoffset:0}
+@media (prefers-reduced-motion:reduce){
+.da *,.da *::before,.da *::after{animation:none !important;transition:none !important}
+.he-lid,.model-annotations path{stroke-dashoffset:0}
+.drill{height:1em}
+}
+</style>
+</helmet>
+<div class="{{rootCls}}" style="--amber: {{accent}}">
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+<div class="wrap hdr">
+<a class="logo" href="#top" aria-label="Dr. Dan Asher, home">
+<img class="logo-eye" src="/_blob/c33e5d72afeb0eb9c81ae973bad9e587" alt="" width="155" height="68">
+<span class="wordmark-text">Dr. Dan Asher<small>THE TACIT DIMENSION</small></span>
+</a>
+<nav class="nav" id="navigation" aria-label="Main navigation">
+<a class="nl" href="#training">Training</a>
+<a class="nl" href="#expertise">The method</a>
+<a class="nl" href="#services">Advisory</a>
+<a class="nl" href="#about">About Dan</a>
+<a class="btn btn-ink" href="#contact">Let’s talk</a>
+</nav>
+</div>
+<div class="progress" aria-hidden="true"><span id="reading-progress"></span></div>
+</header>
+
+<main id="main">
+<!-- ================= HERO ================= -->
+<section class="hero" id="top" aria-labelledby="hero-title" onMouseMove="{{track}}" onMouseLeave="{{untrack}}">
+<div class="hero-grid" aria-hidden="true"></div>
+<div class="wrap">
+<div class="hero-caption eyebrow"><p>Dr. Dan Asher · The Tacit Dimension</p><p>Knowledge management / Training &amp; advisory</p></div>
+<div class="hero-top">
+<h1 class="display" id="hero-title">
+<span class="ht"><span style="--d:.2s">Expertise goes</span></span>
+<span class="deeper serif" aria-label="deeper."><span style="--i:0;--y:0em" aria-hidden="true">d</span><span style="--i:1;--y:.05em" aria-hidden="true">e</span><span style="--i:2;--y:.10em" aria-hidden="true">e</span><span style="--i:3;--y:.15em" aria-hidden="true">p</span><span style="--i:4;--y:.20em" aria-hidden="true">e</span><span style="--i:5;--y:.25em" aria-hidden="true">r</span><span style="--i:6;--y:.30em" aria-hidden="true">.</span><i class="drill" aria-hidden="true"></i></span>
+</h1>
+<div class="hero-eye" aria-hidden="true">
+<svg class="he-svg" viewBox="0 0 800 420">
+<defs>
+<linearGradient id="heLid" x1="30" y1="0" x2="770" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" style="stop-color:#5fc3d6"></stop><stop offset=".3" style="stop-color:#d9eef2"></stop><stop offset=".7" style="stop-color:#d9eef2"></stop><stop offset="1" style="stop-color:#5fc3d6"></stop></linearGradient>
+<linearGradient id="heIris" x1="235" y1="0" x2="565" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" style="stop-color:#3fa7bf"></stop><stop offset="1" style="stop-color:#1d6578"></stop></linearGradient>
+<linearGradient id="heSweep" x1="400" y1="40" x2="520" y2="100" gradientUnits="userSpaceOnUse"><stop offset="0" style="stop-color:#5fc3d6;stop-opacity:0"></stop><stop offset="1" style="stop-color:#5fc3d6;stop-opacity:.38"></stop></linearGradient>
+<radialGradient id="heCore" cx=".42" cy=".4" r=".7"><stop offset="0" style="stop-color:#fff3d6"></stop><stop offset=".5" style="stop-color:#ffc35a"></stop><stop offset="1" style="stop-color:#f59a22"></stop></radialGradient>
+</defs>
+<g class="blink">
+<path class="he-lid" stroke="url(#heLid)" d="M30 210 C130 140 230 34 400 30 C570 34 670 140 770 210 C670 280 570 386 400 390 C230 386 130 280 30 210 Z"></path>
+<g>
+<circle class="pt" cx="400" cy="210" r="4" style="--dx:-330px;--dy:-6px;--d:0s"></circle>
+<circle class="pt" cx="400" cy="210" r="3" style="--dx:330px;--dy:30px;--d:.5s"></circle>
+<circle class="pt" cx="400" cy="210" r="3.5" style="--dx:-230px;--dy:-130px;--d:1s"></circle>
+<circle class="pt" cx="400" cy="210" r="3" style="--dx:250px;--dy:-120px;--d:1.5s"></circle>
+<circle class="pt" cx="400" cy="210" r="4" style="--dx:-250px;--dy:120px;--d:2s"></circle>
+<circle class="pt" cx="400" cy="210" r="3" style="--dx:220px;--dy:140px;--d:2.5s"></circle>
+</g>
+<g class="track">
+<path class="he-halo" d="M385.6 45.6 A165 165 0 0 1 542.9 127.5"></path>
+<path class="he-halo" d="M414.4 374.4 A165 165 0 0 1 257.1 292.5"></path>
+<g class="spin-slow"><path fill="url(#heSweep)" d="M400 210 L400 40 A170 170 0 0 1 520.2 89.8 Z"></path></g>
+<g class="ring-in" style="--d:.8s"><circle class="r1" stroke="url(#heIris)" cx="400" cy="210" r="165"></circle></g>
+<circle class="gr" cx="400" cy="210" r="143"></circle>
+<g class="ring-in" style="--d:1s"><circle class="r2" cx="400" cy="210" r="122"></circle></g>
+<circle class="gr gr-rev" cx="400" cy="210" r="102"></circle>
+<g class="ring-in" style="--d:1.2s"><circle class="r3" cx="400" cy="210" r="82"></circle></g>
+<g class="ring-in" style="--d:1.4s"><circle class="core-glow" cx="400" cy="210" r="56"></circle><circle fill="url(#heCore)" cx="400" cy="210" r="46"></circle><circle class="glint" cx="383" cy="192" r="9"></circle></g>
+</g>
+</g>
+</svg>
+</div>
+</div>
+<div class="hero-context"><p>The knowledge your organization depends on isn’t all in the manual.</p><p>Learn to capture, retain and transfer it.<a class="hero-course-link" href="#training">Explore courses &amp; workshops</a></p></div>
+
+<!-- Onion model -->
+<div class="{{cardCls}}">
+<div class="model-stage">
+<div class="model-figure-caption"><span>THE ONION MODEL</span><span>FOUR CONNECTED LAYERS OF KNOWLEDGE</span></div>
+<svg id="onion-model" class="onion-svg" viewBox="0 0 940 620" role="img" aria-labelledby="onion-label onion-description">
+<title id="onion-label">The four layers of expert knowledge</title>
+<desc id="onion-description">A layered onion cross-section moves from explicit facts, through practical methods and reflective judgment, to ability that an expert demonstrates. Choose a layer, separate the model, or play the guided four-layer reveal.</desc>
+<defs>
+<linearGradient id="shell-fill-0" x1="0" y1="0" x2="1" y2="1"><stop style="stop-color:#398ca2"></stop><stop offset=".5" style="stop-color:#29859b"></stop><stop offset="1" style="stop-color:#237085"></stop></linearGradient>
+<linearGradient id="shell-fill-1" x1="0" y1="0" x2="1" y2="1"><stop style="stop-color:#edf4f5"></stop><stop offset=".5" style="stop-color:#b4ced6"></stop><stop offset="1" style="stop-color:#29859b"></stop></linearGradient>
+<linearGradient id="shell-fill-2" x1="0" y1="0" x2="1" y2="1"><stop style="stop-color:#237085"></stop><stop offset=".5" style="stop-color:#1f6276"></stop><stop offset="1" style="stop-color:#133746"></stop></linearGradient>
+<linearGradient id="shell-fill-3" x1="0" y1="0" x2="1" y2="1"><stop style="stop-color:#fff5dc"></stop><stop offset=".5" style="stop-color:#ffce70"></stop><stop offset="1" style="stop-color:#ffb547"></stop></linearGradient>
+<radialGradient id="coreGlow"><stop offset="0" style="stop-color:#ffce70;stop-opacity:.9"></stop><stop offset="1" style="stop-color:#ffb547;stop-opacity:0"></stop></radialGradient>
+<linearGradient id="scanG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#5fc3d6;stop-opacity:0"></stop><stop offset=".9" style="stop-color:#5fc3d6;stop-opacity:.22"></stop><stop offset="1" style="stop-color:#bfe6ee;stop-opacity:.9"></stop></linearGradient>
+</defs>
+<g class="model-guides"><ellipse cx="455" cy="352" rx="337" ry="239"></ellipse><ellipse class="march" cx="455" cy="352" rx="370" ry="265"></ellipse><path class="march" d="M455 12V600M55 352H865"></path><path d="M443 17h24M443 600h24M68 340v24M850 340v24"></path></g>
+<rect class="scan" x="90" y="20" width="730" height="46" rx="4"></rect>
+<g aria-hidden="true">
+<circle class="mpt" cx="455" cy="380" r="3" style="--dx:200px;--dy:-205px;--d:2.4s"></circle>
+<circle class="mpt" cx="455" cy="380" r="3" style="--dx:220px;--dy:-95px;--d:3.4s"></circle>
+<circle class="mpt" cx="455" cy="380" r="3" style="--dx:-156px;--dy:30px;--d:4.4s"></circle>
+<circle class="mpt" cx="455" cy="380" r="2.5" style="--dx:-260px;--dy:-120px;--d:5.2s"></circle>
+<circle class="mpt" cx="455" cy="380" r="2.5" style="--dx:280px;--dy:120px;--d:6s"></circle>
+</g>
+<g class="model-shells" transform="translate(60 4) scale(1.88)">
+<g class="model-layer model-layer-0" onClick="{{pick0}}"><path class="shell-depth" d="M210 20 C193 52 171 66 137 86 C84 116 59 156 63 203 C68 265 132 303 210 303 C288 303 352 265 357 203 C361 156 336 116 283 86 C249 66 227 52 210 20 Z" transform="translate(0 9)"></path><path class="{{ring0}}" d="M210 20 C193 52 171 66 137 86 C84 116 59 156 63 203 C68 265 132 303 210 303 C288 303 352 265 357 203 C361 156 336 116 283 86 C249 66 227 52 210 20 Z" fill="url(#shell-fill-0)"></path><text x="210" y="45" class="shell-number" style="text-anchor:middle">01</text></g>
+<g class="model-layer model-layer-1" onClick="{{pick1}}"><path class="shell-depth" d="M210 67 C197 89 176 104 153 119 C112 145 92 174 96 210 C101 250 148 275 210 275 C272 275 319 250 324 210 C328 174 308 145 267 119 C244 104 223 89 210 67 Z" transform="translate(0 9)"></path><path class="{{ring1}}" d="M210 67 C197 89 176 104 153 119 C112 145 92 174 96 210 C101 250 148 275 210 275 C272 275 319 250 324 210 C328 174 308 145 267 119 C244 104 223 89 210 67 Z" fill="url(#shell-fill-1)"></path><text x="210" y="91" class="shell-number" style="text-anchor:middle">02</text></g>
+<g class="model-layer model-layer-2" onClick="{{pick2}}"><path class="shell-depth" d="M210 109 C197 128 181 139 166 151 C141 170 127 191 132 213 C138 236 170 248 210 248 C250 248 282 236 288 213 C293 191 279 170 254 151 C239 139 223 128 210 109 Z" transform="translate(0 9)"></path><path class="{{ring2}}" d="M210 109 C197 128 181 139 166 151 C141 170 127 191 132 213 C138 236 170 248 210 248 C250 248 282 236 288 213 C293 191 279 170 254 151 C239 139 223 128 210 109 Z" fill="url(#shell-fill-2)"></path><text x="210" y="137" class="shell-number" style="text-anchor:middle">03</text></g>
+<g class="model-layer model-layer-3" onClick="{{pick3}}"><ellipse class="core-halo" cx="210" cy="196" rx="58" ry="52" fill="url(#coreGlow)"></ellipse><path class="shell-depth" d="M210 150 C200 164 185 174 177 185 C167 199 169 215 182 224 C197 234 223 234 238 224 C251 215 253 199 243 185 C235 174 220 164 210 150 Z" transform="translate(0 9)"></path><path class="{{ring3}}" d="M210 150 C200 164 185 174 177 185 C167 199 169 215 182 224 C197 234 223 234 238 224 C251 215 253 199 243 185 C235 174 220 164 210 150 Z" fill="url(#shell-fill-3)"></path><text x="210" y="203" class="core-label" style="text-anchor:middle">SHOW ME</text><text x="210" y="220" class="core-number" style="text-anchor:middle">ABILITY</text></g>
+</g>
+<g class="model-annotations"><path style="--d:1.5s" d="M654 173H880"></path><path style="--d:1.7s" d="M674 284H880"></path><path style="--d:1.9s" d="M299 409H92"></path><circle style="--d:1.5s" cx="654" cy="173" r="4"></circle><circle style="--d:1.7s" cx="674" cy="284" r="4"></circle><circle style="--d:1.9s" cx="299" cy="409" r="4"></circle><text class="end" style="--d:1.9s" x="880" y="157">WHAT / FACTS</text><text class="end" style="--d:2.1s" x="880" y="268">HOW / METHODS</text><text style="--d:2.3s" x="90" y="380">WHY<tspan x="90" dy="24">JUDGMENT</tspan></text></g>
+</svg>
+<div class="model-tools">
+<div class="model-btns">
+<button type="button" class="{{sepCls}}" onClick="{{toggleSep}}" aria-pressed="{{sepPressed}}" aria-controls="onion-model"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 7 8-4 8 4-8 4-8-4Zm0 6 8 4 8-4M4 19l8 4 8-4"></path></svg><span>{{sepLabel}}</span></button>
+<button type="button" class="{{playCls}}" onClick="{{togglePlay}}" aria-pressed="{{playPressed}}" aria-controls="onion-model"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7V5Z"></path></svg><span>{{playLabel}}</span></button>
+</div>
+<span class="sr-only" role="status">{{playStatus}}</span>
+<span class="figure-note">START ON THE OUTSIDE. LOOK BENEATH THE EXPLANATION.</span>
+</div>
+</div>
+<div class="model-reading">
+<div class="reading-heading"><h2>Go beneath the<br><span class="serif">first explanation.</span></h2><span class="model-index" aria-hidden="true">{{L.n}}</span></div>
+<div class="layer-tabs" role="group" aria-label="Explore the four knowledge layers">
+<sc-for list="{{layers}}" as="l" hint-placeholder-count="4">
+<button type="button" class="{{l.cls}}" onClick="{{l.pick}}" aria-pressed="{{l.pressed}}"><span>{{l.n}}</span><strong>{{l.short}}</strong><small>{{l.sub}}</small></button>
+</sc-for>
+</div>
+<div class="layer-panel" aria-live="polite">
+<sc-for list="{{panel}}" as="p" hint-placeholder-count="1">
+<div class="swap"><h3>{{p.title}}</h3><p class="layer-question">{{p.question}}</p><p class="layer-description">{{p.text}}</p><p class="layer-method"><strong>WAYS TO EXPLORE THIS LAYER</strong><span>{{p.method}}</span></p></div>
+</sc-for>
+</div>
+</div>
+</div>
+
+<div class="hero-bottom">
+<div class="hero-actions"><a class="btn btn-amber" href="#training">Explore courses &amp; workshops</a><a class="arrow" href="#contact" onClick="{{ask.hero}}">Discuss your knowledge challenge<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"></path></svg></a></div>
+<p>Based on the research of Dan Asher &amp; Micha Popper.<br><a href="https://doi.org/10.1108/TLO-06-2018-0105" target="_blank" rel="noopener noreferrer">The Learning Organization, 2019</a></p>
+</div>
+</div>
+</section>
+
+<!-- ================= DAN INTRODUCTION ================= -->
+<section class="wrap dan-introduction" id="dan-introduction" aria-labelledby="dan-introduction-title">
+<a class="pt-wrap" href="#about" aria-label="Meet Dr. Dan Asher">
+<svg class="pt-ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" style="stroke:#2a8aa0;stroke-width:1;stroke-dasharray:1 3"></circle><circle cx="50" cy="50" r="48" style="stroke:var(--amber);stroke-width:2.4;stroke-dasharray:22 280;stroke-linecap:round"></circle></svg>
+<img src="/_blob/5c4cdb5f5dd6a9db29b767d9361df418" alt="Dr. Dan Asher">
+</a>
+<div><p class="eyebrow tealc">Researcher · Practitioner · Educator</p><h2 class="display" id="dan-introduction-title">Dr. Dan Asher</h2><p class="lead">Practical training in capturing, retaining and transferring expert knowledge, grounded in research and hands-on work with more than 100 experts.</p></div>
+<a class="arrow" href="#about">Meet the person behind the method<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"></path></svg></a>
+</section>
+<div class="credibility-strip">
+<div class="wrap cred-inner" style="padding-left:40px;padding-right:40px">
+<div><strong>100+</strong><span>experts involved in knowledge extraction projects</span></div>
+<div><strong>2 research articles</strong><span>Research into tacit knowledge and expert practice</span></div>
+<div><strong>KMGN global course</strong><span>Co-creator and session leader · 2024</span></div>
+</div>
+</div>
+
+<!-- ================= EXPERTISE ================= -->
+<section class="sec" id="expertise" aria-labelledby="expertise-title">
+<div class="wrap">
+<div class="sec-head">
+<div><p class="eyebrow tealc">From individual expertise to shared capability</p><h2 class="display h2" id="expertise-title">When an expert moves on,<br><span class="serif tealc">what stays?</span></h2></div>
+<p class="lead" style="color:#24343e">Experience lives in decisions, patterns and small details. We help you capture that knowledge and teach your people how to learn from experts and develop organizational capability.</p>
+</div>
+<div class="knowledge-transfer" aria-label="From expert experience to resources and guided practice">
+<div class="transfer-caption"><span class="eyebrow tealc">The knowledge journey</span><p>Capture what can be explained. Practice what has to be shown.</p></div>
+<div style="position:relative;margin-top:36px">
+<div class="jr-track" aria-hidden="true"><i class="pk" style="--d:0s"></i><i class="pk" style="--d:1.8s"></i><i class="pk" style="--d:3.6s"></i></div>
+<ol class="jr" style="margin-top:0">
+<li class="jn"><div class="jn-node"><svg viewBox="0 0 88 88" aria-hidden="true"><circle cx="44" cy="44" r="10"></circle><circle cx="44" cy="10" r="5"></circle><circle cx="76" cy="33" r="5"></circle><circle cx="64" cy="72" r="5"></circle><circle cx="23" cy="72" r="5"></circle><circle cx="12" cy="33" r="5"></circle><path d="M44 34V15M53 40l18-6M49 52l12 15M38 52 27 67M35 41l-18-7"></path></svg></div><h3>Expert practice</h3><p>Experience, decisions<br>and critical know-how.</p></li>
+<li class="jn"><div class="jn-node"><svg viewBox="0 0 88 88" aria-hidden="true"><path d="M15 20h27M15 34h19M15 48h27M15 62h19M52 20v42M52 41h18"></path><circle cx="73" cy="41" r="7"></circle></svg></div><h3>Real situations</h3><p>Cases, observation<br>and targeted questions.</p></li>
+<li class="jn"><div class="jn-node"><svg viewBox="0 0 88 88" aria-hidden="true"><rect x="6" y="32" width="20" height="20"></rect><rect x="62" y="8" width="20" height="20"></rect><rect x="62" y="56" width="20" height="20"></rect><path d="M26 42h19V18h17M45 42v24h17"></path></svg></div><h3>Usable knowledge</h3><p>Reasoning, context<br>and validated resources.</p></li>
+<li class="jn"><div class="jn-node"><svg viewBox="0 0 88 88" aria-hidden="true"><circle cx="23" cy="44" r="14"></circle><circle cx="65" cy="44" r="14"></circle><path d="M29 24c14-17 29-10 33 4M59 64c-14 17-29 10-33-4M32 44h24"></path><path d="m55 40 5 4-5 4"></path></svg></div><h3>Team capability</h3><p>Learning, guided practice<br>and feedback.</p></li>
+</ol>
+</div>
+</div>
+<div class="retention-grid">
+<div class="retention-intro">
+<span class="section-number" aria-hidden="true">EK</span>
+<h3 class="display">Expert knowledge<br>retention &amp; extraction</h3>
+<p class="lead">Protect critical know-how when people retire, change roles or move on. Capture expertise during everyday work to strengthen continuity and help the next generation develop.</p>
+<a class="arrow" href="#course-extraction" onClick="{{openFirst}}">Explore the extraction course<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"></path></svg></a>
+</div>
+<div class="retention-detail">
+<div class="rd"><span>01</span><h4>Find the knowledge that matters</h4><p>Map critical expertise, identify where knowledge is concentrated and prioritize what needs to be retained.</p></div>
+<div class="rd"><span>02</span><h4>Capture the reasoning</h4><p>Use expert interviews, real cases, observation and relevant media to elicit know-how, decision criteria and context.</p></div>
+<div class="rd"><span>03</span><h4>Create knowledge people can use</h4><p>Develop decision guides, learning resources and structured knowledge, then validate them with the expert and intended users.</p></div>
+</div>
+</div>
+<div class="outputs-line"><span>Typical outputs</span><div><span class="chip">Expert knowledge maps</span><span class="chip">Decision guides</span><span class="chip">Learning resources</span><span class="chip">Structured knowledge assets</span></div></div>
+</div>
+</section>
+
+<!-- ================= TRAINING ================= -->
+<section class="training" id="training" aria-labelledby="training-title">
+<div class="wrap" style="position:relative">
+<div class="sec-head">
+<div><p class="eyebrow amber">Courses &amp; workshops</p><h2 class="display h2" id="training-title">Learn the methods.<br><span class="serif amber">Change the practice.</span></h2></div>
+<p class="lead">Equip your people to manage knowledge themselves. Dan’s programs combine concepts and practical tools with work on your organization’s own challenges, with expert knowledge retention at their core.</p>
+</div>
+<div class="training-intro"><p>For managers, HR and learning teams, knowledge professionals, experts and the employees who will lead knowledge practices across your organization.</p><span>Explore a program to see what your team can learn.</span></div>
+<nav class="program-navigation" aria-label="Choose a knowledge management program">
+<div class="pn-head"><span>FIND YOUR PROGRAM</span><span>06 COURSES &amp; WORKSHOPS</span></div>
+<div class="program-links">
+<sc-for list="{{progLinks}}" as="p" hint-placeholder-count="6">
+<a class="{{p.cls}}" href="{{p.href}}" onClick="{{p.go}}">
+<sc-if value="{{p.g0}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 88 88" aria-hidden="true"><circle cx="44" cy="44" r="32"></circle><circle cx="44" cy="44" r="18"></circle><circle cx="44" cy="44" r="5"></circle></svg></sc-if>
+<sc-if value="{{p.g1}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 88 88" aria-hidden="true"><circle cx="23" cy="44" r="14"></circle><circle cx="65" cy="44" r="14"></circle><path d="M32 44h24"></path></svg></sc-if>
+<sc-if value="{{p.g2}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 88 88" aria-hidden="true"><path d="M16 67h56M23 61V42M44 61V29M65 61V16"></path></svg></sc-if>
+<sc-if value="{{p.g3}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 88 88" aria-hidden="true"><circle cx="44" cy="44" r="10"></circle><circle cx="44" cy="12" r="6"></circle><circle cx="74" cy="56" r="6"></circle><circle cx="14" cy="56" r="6"></circle></svg></sc-if>
+<sc-if value="{{p.g4}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 88 88" aria-hidden="true"><path d="M10 62V26h68v36H10ZM10 44h68M38 26v36"></path></svg></sc-if>
+<sc-if value="{{p.g5}}" hint-placeholder-val="{{ false }}"><svg viewBox="0 0 88 88" aria-hidden="true"><path d="M10 68h17V52h17V36h17V20h17"></path></svg></sc-if>
+<span>{{p.label}}</span></a>
+</sc-for>
+</div>
+</nav>
+<div class="course-list course-atlas">
+<sc-for list="{{courses}}" as="c" hint-placeholder-count="6">
+<article class="{{c.cls}}" id="{{c.id}}">
+<button type="button" class="course-sum" onClick="{{c.toggle}}" aria-expanded="{{c.expanded}}" aria-controls="{{c.bodyId}}">
+<span class="course-identity"><span class="course-sequence" aria-hidden="true">{{c.num}}</span><span class="course-number">{{c.label}}</span></span>
+<span class="course-art" aria-hidden="true">
+<sc-if value="{{c.g0}}" hint-placeholder-val="{{ false }}"><svg class="course-glyph" viewBox="0 0 88 88"><circle class="sp fl" cx="44" cy="44" r="38"></circle><circle cx="44" cy="44" r="29"></circle><circle cx="44" cy="44" r="20"></circle><circle cx="44" cy="44" r="11"></circle><circle class="am" cx="44" cy="44" r="3"></circle><path d="M44 0v12M44 76v12M0 44h12M76 44h12"></path></svg></sc-if>
+<sc-if value="{{c.g1}}" hint-placeholder-val="{{ false }}"><svg class="course-glyph" viewBox="0 0 88 88"><circle cx="23" cy="44" r="14"></circle><circle class="am" cx="65" cy="44" r="14"></circle><path class="fl" d="M29 24c14-17 29-10 33 4M59 64c-14 17-29 10-33-4"></path><path class="fl" d="M32 44h24"></path><path d="m55 40 5 4-5 4"></path></svg></sc-if>
+<sc-if value="{{c.g2}}" hint-placeholder-val="{{ false }}"><svg class="course-glyph" viewBox="0 0 88 88"><path d="M10 72h68M22 66V46M44 66V32M66 66V18"></path><path class="fl" d="M14 40l30-20 30-12"></path><circle cx="22" cy="40" r="3.5"></circle><circle cx="44" cy="22" r="3.5"></circle><circle class="am" cx="66" cy="12" r="4"></circle></svg></sc-if>
+<sc-if value="{{c.g3}}" hint-placeholder-val="{{ false }}"><svg class="course-glyph" viewBox="0 0 88 88"><g class="sp"><circle cx="44" cy="10" r="5"></circle><circle cx="76" cy="33" r="5"></circle><circle cx="64" cy="72" r="5"></circle><circle cx="23" cy="72" r="5"></circle><circle cx="12" cy="33" r="5"></circle><path class="fl" d="M44 34V15M53 40l18-6M49 52l12 15M38 52 27 67M35 41l-18-7"></path></g><circle class="am" cx="44" cy="44" r="10"></circle></svg></sc-if>
+<sc-if value="{{c.g4}}" hint-placeholder-val="{{ false }}"><svg class="course-glyph" viewBox="0 0 88 88"><path d="M10 58V28h68v30H10ZM24 28v30M38 28v30M52 28v30M66 28v30"></path><path class="fl" d="M10 43h68"></path><circle class="am" cx="24" cy="16" r="4"></circle><circle cx="52" cy="70" r="4"></circle><path d="M24 20v8M52 58v8"></path></svg></sc-if>
+<sc-if value="{{c.g5}}" hint-placeholder-val="{{ false }}"><svg class="course-glyph" viewBox="0 0 88 88"><path class="fl" d="M10 70h15V54h16V38h16V22h20"></path><circle cx="17" cy="70" r="4"></circle><circle cx="34" cy="54" r="4"></circle><circle cx="50" cy="38" r="4"></circle><circle class="am" cx="68" cy="22" r="5"></circle></svg></sc-if>
+</span>
+<span class="course-summary"><span class="course-type">{{c.type}}</span><span class="course-title">{{c.title}}</span><span class="course-preview">{{c.preview}}</span></span>
+<span class="course-outcome"><small>APPLIED WORK</small><span>{{c.outcome}}</span></span>
+<span class="course-action"><span>{{c.actionLabel}}</span><span class="course-toggle" aria-hidden="true"><i></i><i></i></span></span>
+</button>
+<sc-if value="{{c.open}}" hint-placeholder-val="{{ false }}">
+<div class="course-body" id="{{c.bodyId}}">
+<sc-if value="{{c.hasFlow}}" hint-placeholder-val="{{ false }}">
+<div class="project-flow" aria-label="The expert knowledge extraction project"><div class="flow-heading"><span>THE PROJECT YOU DEVELOP</span><strong>From expert practice to a knowledge resource.</strong></div><ol><li><span>01</span><strong>Select an expert</strong></li><li><span>02</span><strong>Explore real cases</strong></li><li><span>03</span><strong>Extract the reasoning</strong></li><li><span>04</span><strong>Structure the knowledge</strong></li></ol></div>
+</sc-if>
+<div class="course-content">
+<div class="course-explanation"><p>{{c.explanation}}</p><p class="course-audience"><strong>For</strong> {{c.forText}}</p><a class="arrow" href="#contact" onClick="{{c.ask}}">{{c.cta}}<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"></path></svg></a></div>
+<div class="course-learning"><h3>Learning focus</h3><ul class="lf"><sc-for list="{{c.learn}}" as="l" hint-placeholder-count="5"><li><span>{{l.n}}</span>{{l.t}}</li></sc-for></ul><p class="aw"><strong>APPLIED WORK</strong>{{c.outcome}}</p></div>
+</div>
+</div>
+</sc-if>
+</article>
+</sc-for>
+</div>
+<div class="training-delivery"><div><p class="eyebrow amber" style="margin-bottom:14px">Designed around your organization</p><h3 class="display">Learn the methods.<br>Apply them to your work.</h3></div><p>Programs can be tailored to your needs and delivered in person, online or in a hybrid format. We start with the capabilities your people need to develop and use examples relevant to your organization.</p><a class="btn btn-amber" href="#contact" onClick="{{ask.delivery}}">Discuss a training program</a></div>
+</div>
+</section>
+
+<!-- ================= APPROACH ================= -->
+<section class="sec" id="approach" aria-labelledby="approach-title" style="background:var(--paper)">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow tealc">Our approach</p><h2 class="display h2" id="approach-title">A method for<br><span class="serif tealc">making it useful.</span></h2></div><p class="lead" style="color:#24343e">Start with the business need. Work closely with the people who hold the knowledge. Make sure the result supports the decisions and tasks it is intended for.</p></div>
+<div style="position:relative">
+<div class="process-line" aria-hidden="true"></div>
+<ol class="process">
+<li><div class="pg"><b>01</b><svg viewBox="0 0 88 88" aria-hidden="true"><circle class="sp fl" cx="44" cy="44" r="29"></circle><circle cx="44" cy="44" r="17"></circle><circle class="am" cx="44" cy="44" r="5"></circle><path d="M44 1v14M44 73v14M1 44h14M73 44h14"></path></svg></div><h3>Focus</h3><p>Define the business challenge, identify critical knowledge and agree on who will use it.</p></li>
+<li><div class="pg"><b>02</b><svg viewBox="0 0 88 88" aria-hidden="true"><path d="M15 20h27M15 34h19M15 48h27M15 62h19"></path><path class="fl" d="M52 20v42M52 41h18"></path><circle class="am" cx="73" cy="41" r="7"></circle></svg></div><h3>Extract</h3><p>Explore real situations and uncover the reasoning behind expert practice.</p></li>
+<li><div class="pg"><b>03</b><svg viewBox="0 0 88 88" aria-hidden="true"><rect x="6" y="32" width="20" height="20"></rect><rect x="62" y="8" width="20" height="20"></rect><rect class="am" x="62" y="56" width="20" height="20"></rect><path class="fl" d="M26 42h19V18h17M45 42v24h17"></path></svg></div><h3>Structure</h3><p>Organize the findings into clear, connected knowledge resources and validate them with the expert.</p></li>
+<li><div class="pg"><b>04</b><svg viewBox="0 0 88 88" aria-hidden="true"><rect x="14" y="14" width="60" height="60" rx="3"></rect><path class="fl" d="M14 34h60M14 54h60M34 14v60M54 14v60"></path><circle class="am" cx="44" cy="44" r="6"></circle></svg></div><h3>Embed</h3><p>Integrate the knowledge into work, learning and the appropriate technology.</p></li>
+</ol>
+</div>
+<div class="research-callout">
+<div class="research-symbol" aria-hidden="true"><svg viewBox="0 0 80 80"><circle style="--d:0s" cx="40" cy="40" r="35"></circle><circle style="--d:.25s" cx="40" cy="40" r="25"></circle><circle style="--d:.5s" cx="40" cy="40" r="15"></circle><circle class="c" style="--d:.75s" cx="40" cy="40" r="5"></circle></svg></div>
+<div><p class="eyebrow amber">Research that informs the practice</p><h3>The “Onion Model” of tacit knowledge</h3><p class="body">Co-authored by Dan Asher and Micha Popper, the model explores the connected layers of tacit knowledge and the methods suited to eliciting them. It provides a conceptual foundation for looking beneath an expert’s first explanation.</p><a class="arrow" href="https://doi.org/10.1108/TLO-06-2018-0105" target="_blank" rel="noopener noreferrer">Read the published research<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"></path></svg></a></div>
+<p class="publication-note">The Learning<br>Organization<b>2019</b></p>
+</div>
+</div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="sec" id="about" aria-labelledby="about-title" style="background:#fbfaf6">
+<div class="wrap">
+<div class="about-grid">
+<div class="about-portrait-column">
+<figure class="dan-portrait"><img src="/_blob/5c4cdb5f5dd6a9db29b767d9361df418" alt="Dr. Dan Asher"><figcaption><strong>Dr. Dan Asher</strong><span>The Tacit Dimension · Knowledge Management</span></figcaption></figure>
+<blockquote class="dan-quote">There are things your experts know that they will never be able to tell you.<cite>Dr. Dan Asher</cite></blockquote>
+<p class="portrait-signature">RESEARCHER · PRACTITIONER · EDUCATOR</p>
+</div>
+<div class="about-copy">
+<p class="eyebrow tealc">Meet Dr. Dan Asher</p>
+<h2 class="display h2" id="about-title">Meet the mind<br><span class="serif tealc">behind the method.</span></h2>
+<p class="about-lead">Dan combines research into tacit knowledge, years of organizational leadership and hands-on work with experts across professions.</p>
+<p>Before leading his consulting practice, Dan served as a knowledge management and learning innovation leader in a government organization. His experience spans management, organizational learning and the interpersonal skills needed to understand people’s work and help them share what they know.</p>
+<p>His doctoral research at the University of Haifa focused on tacit knowledge in professions that rely on interpersonal interaction. He explored how expert knowledge can be elicited and structured to address organizational knowledge loss. His two research articles examine the layers of tacit knowledge and ways to elicit expertise from interpersonal interactions.</p>
+<p>Dan has worked with more than 100 experts on knowledge extraction projects. He describes himself as a <span class="pracad">“pracademic”</span>: someone who connects theory with organizational practice. His work combines curiosity about people and technology with a practical interest in how knowledge supports real decisions.</p>
+<h3 class="about-subheading">Teaching your people to do the work</h3>
+<p>Dan co-created and led sessions in the Knowledge Management Global Network’s 2024 online course, “Leveraging the Value Creation of Tacit Knowledge.” His courses connect methods with participants’ actual organizational challenges. In the extraction course, employees work with an expert and develop a knowledge retention project as they learn. His advisory work complements this training with organizational assessments and KM technology requirements.</p>
+<p class="about-example">At Israel Aerospace Industries, an expert knowledge project developed into a broader engineering knowledge initiative, connecting a structured knowledge core with a generative AI assistant.</p>
+<div class="about-principles">
+<div><span>01</span><strong>Understand the work</strong><p>Begin with the realities of your organization.</p></div>
+<div><span>02</span><strong>Develop your people</strong><p>Build the skills to capture and share knowledge.</p></div>
+<div><span>03</span><strong>Connect the pieces</strong><p>Align people, knowledge practices and technology.</p></div>
+</div>
+<div class="about-links">
+<a class="arrow" href="https://www.linkedin.com/in/dan-asher-phd/" target="_blank" rel="noopener noreferrer">Connect with Dan on LinkedIn<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"></path></svg></a>
+<a class="arrow" href="https://danasher.co.il/" target="_blank" rel="noopener noreferrer">Visit Dan’s Hebrew website<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"></path></svg></a>
+</div>
+</div>
+</div>
+
+<div class="professional-credentials" aria-labelledby="credentials-title">
+<div class="credentials-heading"><p class="eyebrow tealc">Research · Recognition · International experience</p><h3 class="display" id="credentials-title">A practice grounded in research.<br><span class="serif tealc">Experience shared internationally.</span></h3></div>
+<div class="credentials-grid">
+<article class="credential"><span class="credential-label">PUBLISHED RESEARCH</span><h4>Two articles on tacit knowledge</h4><p>Dan’s research explores how expert knowledge can be understood, elicited and put to use. These articles connect the conceptual model with methods for uncovering expertise.</p>
+<ul class="publication-links"><li><a href="https://doi.org/10.1108/TLO-06-2018-0105" target="_blank" rel="noopener noreferrer">The “Onion Model” of tacit knowledge ↗</a><span>Connected layers of knowledge and ways to elicit them.</span></li><li><a href="https://danasher.co.il/פוסט-7/" target="_blank" rel="noopener noreferrer">Eliciting tacit knowledge from interpersonal interactions ↗</a><span>A method for exploring expertise in work that depends on interaction between people.</span></li></ul></article>
+<article class="credential"><span class="credential-label">INTERNATIONAL TRAINING · KMGN 2024</span><h4>Co-creating and teaching a global KM course</h4><p>Dan was a co-creator and session leader for the Knowledge Management Global Network’s online course, <em>“Leveraging the Value Creation of Tacit Knowledge.”</em> He developed the course with Moria Levy, Fisher Yu and Vincent Ribiere.</p>
+<ul class="international-topics"><li>Interviewing to elicit tacit knowledge</li><li>Learning from experts and facilitating knowledge transfer</li><li>Capturing tacit knowledge in interpersonal interactions</li></ul>
+<p>The program brought his methods to an international KM learning environment.</p>
+<div class="credential-links"><a class="arrow" href="https://www.kmglobalnetwork.org/activities/kmgn-course-2024" target="_blank" rel="noopener noreferrer">View the official course<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"></path></svg></a><a class="arrow" href="https://www.linkedin.com/posts/dan-asher-phd_kmgn-tacitknowledge-implicit-activity-7198755902697435137-tmjO" target="_blank" rel="noopener noreferrer">Read Dan’s session reflection<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"></path></svg></a></div></article>
+</div>
+<div class="credential-gallery" aria-label="Original recognition and conference images">
+<article class="credential dark"><a class="credential-image contain" href="/_blob/64d4ea8df209caf41a6d690ef90702a0" target="_blank" rel="noopener noreferrer" aria-label="View Dan Asher’s MIKE Expert Panelist recognition (opens in a new tab)"><img src="/_blob/64d4ea8df209caf41a6d690ef90702a0" alt="2026 Southeast Asia &amp; National MIKE Award Expert Panelist recognition issued to Dan Asher"></a><div class="ctext"><span class="credential-label">PROFESSIONAL RECOGNITION · 2026</span><h4>MIKE Award Expert Panelist</h4><p>Recognized as a <strong>2026 Southeast Asia &amp; National MIKE Award Expert Panelist</strong>. The role involves contributing professional knowledge and judgment to the evaluation of organizations’ knowledge management and innovation practices.</p><p class="meta">Issued by IKI-SEA, Bangkok University · September 18, 2026</p><a class="arrow" href="/_blob/64d4ea8df209caf41a6d690ef90702a0" target="_blank" rel="noopener noreferrer">View the recognition<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"></path></svg></a></div></article>
+<article class="credential dark"><a class="credential-image" href="/_blob/9e48ff9ef2db1426a9b67767d5cc9eb4" target="_blank" rel="noopener noreferrer" aria-label="View Dan Asher’s KMWorld 2026 speaker graphic (opens in a new tab)"><img src="/_blob/9e48ff9ef2db1426a9b67767d5cc9eb4" alt="KMWorld 2026 speaker graphic for Dan Asher’s session on knowledge extraction and AI-ready structuring"></a><div class="ctext"><span class="credential-label">UPCOMING CONFERENCE · NOVEMBER 2026</span><h4>Speaking at KMWorld 2026</h4><p class="conference-session">Practitioner’s Framework: Knowledge Extraction &amp; AI-Ready Structuring</p><p>Dan will share his approach to extracting expert knowledge and structuring it for use with generative AI.</p><p class="meta">Session C201 · November 18, 2026<br>10:45–11:30 a.m. · Washington, DC</p><a class="arrow" href="https://www.kmworld.com/Conference/2026/Speakers/Dan-Asher.aspx" target="_blank" rel="noopener noreferrer">View the official speaker page<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"></path></svg></a></div></article>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services" aria-labelledby="services-title">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow" style="color:#8fd3e0">Assessment &amp; advisory</p><h2 class="display h2" id="services-title">Better questions.<br><span class="serif amber">Clearer next steps.</span></h2></div><p class="lead">Alongside training, we assess your current knowledge management practices and systems, then identify the skills, processes and technology your organization needs to develop.</p></div>
+<div class="service-grid">
+<article class="service" style="--lift:120px"><span class="service-big" aria-hidden="true">01</span><span class="service-index">01 / CURRENT STATE</span><h3>Organizational KM assessment</h3><p>Assess how knowledge is created, organized, shared and used today. Identify gaps in critical expertise, knowledge flows and work practices, then clarify priorities for development.</p><ul><li>Knowledge needs and critical expertise</li><li>Current practices and knowledge gaps</li><li>Priorities for training and organizational improvement</li></ul><a class="arrow" href="#contact" onClick="{{ask.s1}}">Assess your current situation<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"></path></svg></a></article>
+<article class="service" style="--lift:80px"><span class="service-big" aria-hidden="true">02</span><span class="service-index">02 / SYSTEMS &amp; REQUIREMENTS</span><h3>KM technology assessment</h3><p>Assess how well your existing knowledge environment supports the work people need to do. Translate knowledge needs into requirements for your IT team and technology providers.</p><ul><li>Existing platforms and selection criteria</li><li>Information architecture, taxonomy, metadata and search</li><li>KM technology specifications and integration requirements</li></ul><a class="arrow" href="#contact" onClick="{{ask.s2}}">Review your knowledge systems<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"></path></svg></a></article>
+<article class="service" style="--lift:40px"><span class="service-big" aria-hidden="true">03</span><span class="service-index">03 / STRATEGY &amp; PRACTICE</span><h3>KM strategy &amp; implementation</h3><p>Translate the assessment findings into a practical roadmap. Define knowledge roles, work routines and priorities that fit your organization, then identify the capabilities your people need to put the plan into practice.</p><ul><li>Strategy and implementation roadmap</li><li>Governance and knowledge champions</li><li>Transfer, learning and retention in work routines</li></ul><a class="arrow" href="#contact" onClick="{{ask.s3}}">Discuss your next steps<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"></path></svg></a></article>
+<article class="service hot" style="--lift:0px"><span class="service-big" aria-hidden="true">04</span><span class="service-index">04 / AI KNOWLEDGE FOUNDATIONS</span><h3>Knowledge for generative AI</h3><p>Structure expert knowledge and organizational content to give AI assistants relevant reasoning, context and source material.</p><ul><li>Content quality and knowledge structuring</li><li>Expert validation and source traceability</li><li>Knowledge foundations for AI assistants</li></ul><a class="arrow" href="#contact" onClick="{{ask.s4}}">Discuss AI knowledge readiness<svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"></path></svg></a></article>
+</div>
+</div>
+</section>
+
+<!-- ================= YOUR PRIORITIES ================= -->
+<section class="sec" id="your-priorities" aria-labelledby="priorities-title" style="padding-bottom:80px">
+<div class="wrap">
+<div class="sec-head"><div><p class="eyebrow tealc">Your priorities</p><h2 class="display h2" id="priorities-title">Your role.<br><span class="serif tealc">Your knowledge challenge.</span></h2></div></div>
+<div class="audience-layout">
+<div class="audience-tabs" role="group" aria-label="Your role">
+<sc-for list="{{roles}}" as="r" hint-placeholder-count="4">
+<button type="button" class="{{r.cls}}" onClick="{{r.pick}}" aria-pressed="{{r.pressed}}">{{r.name}}<span>{{r.sub}}</span></button>
+</sc-for>
+</div>
+<div class="audience-panel" aria-live="polite">
+<p class="eyebrow amber">{{R.label}}</p>
+<h3>{{R.title}}</h3>
+<p>{{R.description}}</p>
+<ul><sc-for list="{{R.pts}}" as="p" hint-placeholder-count="3"><li><span>{{p.n}}</span>{{p.t}}</li></sc-for></ul>
+<a class="btn btn-amber" href="#contact" onClick="{{R.ask}}">Talk through your priorities</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq" aria-labelledby="faq-title" style="padding-top:60px">
+<div class="wrap faq-grid">
+<div class="faq-heading"><p class="eyebrow tealc">A few common questions</p><h2 class="display h2" id="faq-title">Before<br><span class="serif tealc">we start.</span></h2></div>
+<div class="faq-list">
+<details><summary>Is this relevant only when experts retire?<i aria-hidden="true"></i></summary><p>Retirement is one reason to capture expert knowledge. The same work can support role changes, succession, onboarding, everyday learning and the development of knowledge resources for AI. Capturing expertise while it is still in use gives others time to learn from it and test it in practice.</p></details>
+<details><summary>What if experts find it difficult to explain what they know?<i aria-hidden="true"></i></summary><p>That is one of the main reasons to use a structured extraction process. We explore real cases, decisions, observations and examples to uncover knowledge that may not emerge in a general interview or in response to a request to write a manual.</p></details>
+<details><summary>Can you work with our existing KM platforms?<i aria-hidden="true"></i></summary><p>Yes. We assess the current environment and define how knowledge should be organized, found, shared and maintained. Where appropriate, this includes requirements for SharePoint and Microsoft 365 and coordination with your IT team or technology provider.</p></details>
+<details><summary>How does expert knowledge contribute to generative AI?<i aria-hidden="true"></i></summary><p>Expert knowledge can add reasoning, exceptions and context that are absent from existing documents. We help structure and validate those knowledge assets, document their sources and connect them with the intended AI use case. We also define how to validate and maintain the knowledge and review the resulting AI outputs.</p></details>
+<details><summary>Can our own team learn to do this?<i aria-hidden="true"></i></summary><p>Yes. Practical courses and workshops help your employees develop the skills to elicit, structure and transfer knowledge. Programs can be built around a real expert knowledge project, so participants create useful resources for their organization as they learn.</p></details>
+</div>
+</div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact" aria-labelledby="contact-title">
+<div class="ct-eye" aria-hidden="true">
+<svg viewBox="0 0 160 72">
+<defs><linearGradient id="ctLid" x1="4" y1="0" x2="156" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" style="stop-color:#5fc3d6"></stop><stop offset=".5" style="stop-color:#e6f3f5"></stop><stop offset="1" style="stop-color:#5fc3d6"></stop></linearGradient></defs>
+<g class="ct-blink">
+<path class="lg-lid" stroke="url(#ctLid)" style="stroke-width:3" d="M4 36 C24 22 44 6 80 5 C116 6 136 22 156 36 C136 50 116 66 80 67 C44 66 24 50 4 36 Z"></path>
+<g class="ct-iris"><circle cx="80" cy="36" r="25" style="fill:none;stroke:#5fc3d6;stroke-width:4;stroke-dasharray:18.1 3 75.6 3 57.3 0"></circle><circle cx="80" cy="36" r="17" style="fill:none;stroke:#c3e2e8;stroke-width:1;stroke-dasharray:1 3"></circle></g>
+<circle cx="80" cy="36" r="8" style="fill:var(--amber)"></circle>
+</g>
+</svg>
+</div>
+<div class="wrap contact-inner">
+<div><p class="eyebrow amber">Let’s start with your challenge</p><h2 class="display" id="contact-title">Keep the knowledge.<br><span class="serif amber">Grow the capability.</span></h2><p class="lead">Tell Dan about your people, your knowledge challenge and the capabilities you want to develop. Start with a course or workshop, an assessment of your KM practices, or a review of your knowledge systems.</p></div>
+<div class="contact-options">
+<div class="contact-monogram" aria-hidden="true"><svg viewBox="0 0 100 100"><circle style="--d:0s" cx="50" cy="50" r="46"></circle><circle style="--d:.25s" cx="50" cy="50" r="34"></circle><circle style="--d:.5s" cx="50" cy="50" r="22"></circle><circle class="c" style="--d:.75s" cx="50" cy="50" r="10"></circle></svg><span>KNOWLEDGE<br>INTO CAPABILITY</span></div>
+<a class="btn btn-amber" href="{{mail}}">Discuss training or assessment</a>
+<a class="big" href="mailto:info@danasher.co.il">info@danasher.co.il</a>
+<a class="big" href="tel:+972503490606">+972 50 349 0606</a>
+<p class="contact-note">{{contactNote}}</p>
+<button type="button" class="copy-email" onClick="{{copyEmail}}">Copy email address</button>
+<span class="copy-status" role="status">{{copied}}</span>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="wrap footer-inner">
+<div><strong>Dr. Dan Asher</strong><span class="tag">The Tacit Dimension · Expert knowledge. Organizational capability.</span></div>
+<div class="footer-links"><a href="#training">Training</a><a href="#services">Assessment</a><a href="#credentials-title">Research</a><a href="https://danasher.co.il/" target="_blank" rel="noopener noreferrer" lang="he">עברית</a><button type="button" onClick="{{openPrivacy}}">Privacy</button></div>
+<small>© 2026 Dr. Dan Asher</small>
+</div>
+</footer>
+<sc-if value="{{privacy}}" hint-placeholder-val="{{ false }}">
+<div class="privacy"><div class="privacy-box" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+<div class="privacy-top"><h2 id="privacy-title">Privacy on this website</h2><button type="button" onClick="{{closePrivacy}}" aria-label="Close privacy information">×</button></div>
+<p>This website does not use advertising or analytics tools and does not collect information through an online form. Contact links open your email or phone app.</p>
+<p>If you email us, the details you choose to share will be used to respond to your inquiry. For questions about your information, contact <a href="mailto:info@danasher.co.il">info@danasher.co.il</a>.</p>
+<p>The website hosting provider may process technical information needed to deliver and secure the website. External links lead to websites with their own privacy practices.</p>
+</div></div>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#ffb547","options":["#ffb547","#ff8a5c","#9be36d","#7fd0df"]},"motion":{"editor":"boolean","default":true},"autoplayOnion":{"editor":"boolean","default":true},"$preview":{"width":1440,"height":8000}}'>
+var LAYERS = [
+  { short: 'What', sub: 'Facts & information', title: 'Explicit knowledge', question: 'What needs to be known?', text: 'The outer layer contains facts, concepts, information and documented procedures that can be explained, written down and shared directly.', method: 'Documents, explanations & knowledge resources' },
+  { short: 'How', sub: 'Practical methods', title: 'Hidden practical knowledge', question: 'How is it done?', text: 'The practical methods and techniques behind the work may be missing from the manual. Targeted questions and real examples help an expert put them into words.', method: 'Targeted questions & exploration of real cases' },
+  { short: 'Why', sub: 'Reasoning & judgment', title: 'Reflective tacit knowledge', question: 'Why choose this approach?', text: 'This layer contains the reasoning, judgment and criteria behind a decision. Reflecting on real cases helps experts explain why one approach fits and another does not.', method: 'Reflective dialogue & case analysis' },
+  { short: 'Show me', sub: 'Demonstrated ability', title: 'Expertise in action', question: 'Can you show me?', text: 'At the core is ability that an expert can demonstrate but cannot fully put into words. Others develop this ability through observation, guided practice and feedback.', method: 'Demonstration, observation & guided practice' }
+];
+var COURSES = [
+  { id: 'course-extraction', nav: 'Retain expertise', label: 'EXPERT KNOWLEDGE', type: 'PROJECT-BASED COURSE', title: 'Expert Knowledge Extraction & Structuring', hasFlow: true,
+    preview: 'Develop your team’s ability to uncover critical expertise and turn it into knowledge others can use.',
+    outcome: 'An expert knowledge project developed during the course.',
+    explanation: 'Experts often know more than they can explain in a general interview. This course trains employees to elicit tacit knowledge, explore real situations and organize the findings into clear knowledge items. Participants select an expert and a real knowledge challenge, then apply the methods between sessions. Throughout the course, participants work toward a completed knowledge retention project, developing internal expertise while creating a resource their organization can use.',
+    forText: 'Knowledge professionals, HR and learning teams, and employees selected to lead expert knowledge projects.',
+    cta: 'Plan this course for your team', interest: 'Expert Knowledge Extraction and Structuring course',
+    learning: ['Recognize different layers of explicit and tacit knowledge.', 'Use expert interviews, real cases and targeted questions.', 'Extract reasoning, practical know-how and decision criteria.', 'Structure findings into connected knowledge items that others can learn from.', 'Apply the methods to a real expert knowledge retention project.'] },
+  { id: 'course-transfer', nav: 'Transfer knowledge', label: 'KNOWLEDGE TRANSFER', type: 'COURSE & WORKSHOP', title: 'Expert Knowledge Transfer',
+    preview: 'Help experts share their experience in ways others can learn from, and help colleagues ask the questions that matter.',
+    outcome: 'A structured transfer plan for a real role or area of expertise.',
+    explanation: 'Knowing how to perform a task does not automatically make that knowledge easy to share. Experts may skip steps that feel obvious, rely on professional shorthand or struggle to explain their judgment. This program helps experts recognize what they take for granted and make their knowledge accessible to colleagues. It also addresses the knowledge gaps that persist after a handover, helping teams connect learning from experts with mentoring, role transitions and practical learning resources.',
+    forText: 'Experts, mentors, managers and teams responsible for succession and knowledge transfer.',
+    cta: 'Plan this program for your experts', interest: 'Expert Knowledge Transfer training',
+    learning: ['Recognize what an expert takes for granted.', 'Surface tacit knowledge through questions and examples.', 'Explain professional reasoning in language others can understand and apply.', 'Choose suitable written, visual and digital learning resources.', 'Build a knowledge base that supports handover and mentoring.'] },
+  { id: 'course-managers', nav: 'Lead with knowledge', label: 'MANAGEMENT', type: 'MANAGEMENT COURSE', title: 'Knowledge Management for Managers',
+    preview: 'Make knowledge management a practical part of how you lead, improve performance and protect continuity.',
+    outcome: 'Practical actions for a knowledge challenge in the manager’s team.',
+    explanation: 'This course gives managers a practical understanding of knowledge management and how it supports organizational performance. Participants examine how relevant knowledge is organized, how it reaches employees and how experience becomes a resource for future work. Practical tools help managers retain knowledge, learn from experts, capture project insights and share knowledge through everyday work routines. Exercises connect the material with each manager’s own organizational challenge, making the learning relevant to decisions they already need to make.',
+    forText: 'Business leaders, department and team managers, and HR managers.',
+    cta: 'Develop your managers’ KM capabilities', interest: 'Knowledge Management for Managers course',
+    learning: ['Connect knowledge needs with business priorities.', 'Organize and maintain a relevant knowledge core.', 'Capture insights and useful practices from projects and events.', 'Retain knowledge and strengthen learning from experts.', 'Integrate knowledge sharing into management routines.'] },
+  { id: 'course-champions', nav: 'Develop champions', label: 'KNOWLEDGE CHAMPIONS', type: 'FOUNDATIONS & PRACTICE COURSE', title: 'Knowledge Champions Training',
+    preview: 'Prepare the people who will lead knowledge management activities and develop capability across your organization.',
+    outcome: 'A knowledge map and initial plan for the champion’s area of responsibility.',
+    explanation: 'Knowledge champions need a broad view of the field and practical tools they can use with their colleagues. This program introduces knowledge management and develops the skills to assess current practices, map critical knowledge and build a knowledge core: an organized body of knowledge that supports the work. Participants learn how to organize knowledge using a taxonomy, capture and retain knowledge, and encourage learning from experts. The aim is to develop people who can turn knowledge management into an ongoing organizational practice.',
+    forText: 'Designated knowledge champions, knowledge coordinators and emerging KM leaders.',
+    cta: 'Build your network of knowledge champions', interest: 'Knowledge Champions Training',
+    learning: ['Understand the principles and scope of knowledge management.', 'Use diagnostic tools and a knowledge matrix.', 'Create a knowledge core with a practical taxonomy.', 'Apply tools for knowledge capture and retention.', 'Encourage sharing and learning from experts.'] },
+  { id: 'course-capture', nav: 'Capture everyday learning', label: 'KNOWLEDGE CAPTURE', type: 'PRACTICAL COURSE & WORKSHOP', title: 'Knowledge Capture in the Flow of Work',
+    preview: 'Capture what people learn throughout the employee lifecycle and at each stage of a project.',
+    outcome: 'A knowledge capture routine for a relevant work process or employee transition.',
+    explanation: 'Useful knowledge emerges while people are doing the work. This training explores how to capture it through routines that teams already use: onboarding, mentoring, debriefs and after-action reviews, project learning and employee departures. Participants learn to ask questions that reveal practical insights and tacit knowledge, structure what they find and make it available to the next person who needs it. The program connects individual experience with a knowledge base that can keep developing over time.',
+    forText: 'HR and learning teams, project leaders, mentors, managers and knowledge champions.',
+    cta: 'Bring knowledge capture into daily work', interest: 'Knowledge Capture in the Flow of Work training',
+    learning: ['Onboarding: identify what a new employee needs to learn.', 'Mentoring: capture the reasoning behind expert guidance.', 'Debriefs: turn experience into lessons through structured reflection.', 'Projects: capture insights while they are still fresh.', 'Employee departure: structure handovers and capture knowledge before someone leaves.'] },
+  { id: 'course-change', nav: 'Support adoption', label: 'CHANGE & ADOPTION', type: 'CHANGE & ADOPTION TRAINING', title: 'Change Management & Adoption',
+    preview: 'Help people adopt new knowledge practices, ways of working and KM technologies.',
+    outcome: 'An approach to supporting adoption in your own change initiative.',
+    explanation: 'Introducing a new system or approach changes how people work. This training examines the emotional responses that change can produce and the connection between human psychology and technology adoption. It introduces models and methods for embedding change, with a focus on the people who will use the new system or adopt the new practice. For a knowledge management initiative, this means considering adoption alongside the technology and the process from the outset.',
+    forText: 'Managers, HR professionals, KM teams and IT leaders introducing new systems or work practices.',
+    cta: 'Support adoption of your KM initiative', interest: 'Change Management and Adoption training',
+    learning: ['Understand emotional responses to organizational change.', 'Connect psychology with technology adoption.', 'Explore models and methods for embedding change.', 'Apply the learning to a new system, concept or work practice.'] }
+];
+var ROLES = [
+  { name: 'Business leaders', sub: 'Continuity & performance', label: 'BUSINESS LEADERS', title: 'Keep critical capability inside the organization.', description: 'Understand where expertise is concentrated, what is at risk and which knowledge will make the greatest difference to the business.', points: ['Prioritize expertise linked to critical work.', 'Develop managers’ knowledge management capabilities.', 'Connect training and assessment with operational needs.'], interest: 'Management training and organizational KM assessment' },
+  { name: 'Human resources', sub: 'Succession & capability', label: 'HUMAN RESOURCES', title: 'Turn experience into the next generation’s capability.', description: 'Support succession, onboarding and workforce transitions with a practical plan to retain and transfer expert knowledge.', points: ['Train your people to retain and transfer expert knowledge.', 'Strengthen mentoring, handovers and onboarding.', 'Develop knowledge champions and help people adopt new practices.'], interest: 'HR training, succession and knowledge retention' },
+  { name: 'KM & learning teams', sub: 'Capture & transfer', label: 'KM & LEARNING TEAMS', title: 'Build a repeatable way to capture and share expertise.', description: 'Develop the methods, resources and internal skills that make expert knowledge part of your organization’s learning and work.', points: ['Practice knowledge extraction on real expert projects.', 'Build a knowledge core with a useful taxonomy.', 'Prepare knowledge champions to lead ongoing KM activities.'], interest: 'KM courses and knowledge champion development' },
+  { name: 'IT & innovation teams', sub: 'Technology & AI readiness', label: 'IT & INNOVATION TEAMS', title: 'Give technology the knowledge foundation it needs.', description: 'Assess your existing knowledge systems and clarify the requirements behind your platform and AI use cases.', points: ['Evaluate platforms against organizational knowledge needs.', 'Define metadata, search and integration requirements.', 'Support technology adoption and prepare knowledge for AI assistants.'], interest: 'KM technology assessment and adoption' }
+];
+var ASKS = {
+  hero: 'expert knowledge retention and training',
+  delivery: 'a tailored knowledge management training program',
+  s1: 'Organizational KM assessment',
+  s2: 'KM technology assessment and requirements',
+  s3: 'KM strategy and implementation',
+  s4: 'Knowledge for generative AI'
+};
+function pad(i) { return '0' + (i + 1); }
+
+class Component extends DCLogic {
+  st() { return this.state || {}; }
+  set(patch) { this.setState(Object.assign({}, this.st(), patch)); }
+  stopPlay(label) {
+    if (this._t) { clearTimeout(this._t); this._t = null; }
+    if (this.st().playing) this.set({ playing: false, status: label || 'The model is paused. Choose any layer to explore it.' });
+  }
+  startPlay() {
+    var self = this;
+    if (this._t) clearTimeout(this._t);
+    var i = 0;
+    var step = function () {
+      self.set({ layer: i, peel: true, exploded: false, playing: true, played: true, status: 'Layer ' + (i + 1) + ': ' + LAYERS[i].title + '.' });
+      if (i < 3) { i += 1; self._t = setTimeout(step, 1500); }
+      else { self._t = setTimeout(function () { self._t = null; self.set({ playing: false, status: 'The four-layer reveal is complete. Choose any layer or replay the model.' }); }, 1000); }
+    };
+    step();
+  }
+  componentDidMount() {
+    var self = this;
+    var reduce = false;
+    try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    if (!reduce && (this.props.autoplayOnion ?? true) && (this.props.motion ?? true)) {
+      this._auto = setTimeout(function () { self.startPlay(); }, 2600);
+    }
+    this._arr = setTimeout(function () { self.set({ arrived: true }); }, 2200);
+    this._scroll = function () {
+      var bar = document.getElementById('reading-progress');
+      if (!bar) return;
+      var d = document.documentElement;
+      var max = Math.max(1, d.scrollHeight - window.innerHeight);
+      bar.style.setProperty('--p', Math.min(1, Math.max(0, window.scrollY / max)).toFixed(3));
+    };
+    try { window.addEventListener('scroll', this._scroll, { passive: true }); } catch (e) {}
+  }
+  componentWillUnmount() {
+    clearTimeout(this._t); clearTimeout(this._auto); clearTimeout(this._arr);
+    try { window.removeEventListener('scroll', this._scroll); } catch (e) {}
+  }
+  renderVals() {
+    var self = this;
+    var s = this.st();
+    var layer = s.layer == null ? 3 : s.layer;
+    var exploded = !!s.exploded;
+    var peel = !!s.peel;
+    var open = s.open || { 'course-extraction': false };
+    var cur = s.cur || 'course-extraction';
+    var role = s.role == null ? 0 : s.role;
+    var interest = s.interest || '';
+    var ask = function (text) { return function () { self.set({ interest: text }); }; };
+    var pickLayer = function (i) { return function () { clearTimeout(self._auto); self.stopPlay(); self.set({ layer: i, peel: true, playing: false }); }; };
+
+    var cardCls = 'expertise-card' + (s.arrived ? '' : ' arrive') + (exploded ? ' model-exploded' : '') + (!exploded && peel && layer > 0 ? ' peel-' + layer : '');
+    var ringCls = function (i) { return 'ring' + (i === layer ? ' selected' : ''); };
+    var layers = LAYERS.map(function (l, i) {
+      return { n: pad(i), short: l.short, sub: l.sub, cls: 'layer-tab' + (i === layer ? ' on' : ''), pressed: i === layer ? 'true' : 'false', pick: pickLayer(i) };
+    });
+
+    var courses = COURSES.map(function (c, i) {
+      var isOpen = !!open[c.id];
+      return {
+        id: c.id, bodyId: c.id + '-body', num: pad(i), label: c.label, type: c.type, title: c.title, preview: c.preview, outcome: c.outcome,
+        explanation: c.explanation, forText: c.forText, cta: c.cta, hasFlow: !!c.hasFlow,
+        cls: 'course' + (i === 0 ? ' featured' : '') + (isOpen ? ' open' : ''),
+        open: isOpen, expanded: isOpen ? 'true' : 'false',
+        actionLabel: isOpen ? 'Close details' : 'Explore this course',
+        g0: i === 0, g1: i === 1, g2: i === 2, g3: i === 3, g4: i === 4, g5: i === 5,
+        learn: c.learning.map(function (t, j) { return { n: pad(j), t: t }; }),
+        ask: ask(c.interest),
+        toggle: function () { var o = Object.assign({}, self.st().open || {}); o[c.id] = !o[c.id]; self.set({ open: o, cur: c.id }); }
+      };
+    });
+    var progLinks = COURSES.map(function (c, i) {
+      return {
+        label: c.nav, href: '#' + c.id, cls: c.id === cur ? 'cur' : '',
+        g0: i === 0, g1: i === 1, g2: i === 2, g3: i === 3, g4: i === 4, g5: i === 5,
+        go: function () { var o = Object.assign({}, self.st().open || {}); o[c.id] = true; self.set({ open: o, cur: c.id }); }
+      };
+    });
+
+    var roles = ROLES.map(function (r, i) {
+      return { name: r.name, sub: r.sub, cls: 'atab' + (i === role ? ' on' : ''), pressed: i === role ? 'true' : 'false', pick: function () { self.set({ role: i }); } };
+    });
+    var r0 = ROLES[role];
+    var R = { label: r0.label, title: r0.title, description: r0.description, ask: ask(r0.interest), pts: r0.points.map(function (t, i) { return { n: pad(i), t: t }; }) };
+
+    var askMap = {};
+    Object.keys(ASKS).forEach(function (k) { askMap[k] = ask(ASKS[k]); });
+
+    var mail = 'mailto:info@danasher.co.il?subject=Knowledge%20management%20training%20and%20assessment';
+    if (interest) {
+      var body = 'Hello Dan,\n\nI would like to discuss ' + interest + ' for our organization.\n\nOrganization:\nOur knowledge challenge:\nPeople or teams involved:\nPreferred next step:\n\nBest regards,\n';
+      mail = 'mailto:info@danasher.co.il?subject=' + encodeURIComponent('Inquiry: ' + interest) + '&body=' + encodeURIComponent(body);
+    }
+
+    return {
+      accent: this.props.accent ?? '#ffb547',
+      rootCls: 'da' + ((this.props.motion ?? true) ? '' : ' still'),
+      cardCls: cardCls,
+      ring0: ringCls(0), ring1: ringCls(1), ring2: ringCls(2), ring3: ringCls(3),
+      pick0: pickLayer(0), pick1: pickLayer(1), pick2: pickLayer(2), pick3: pickLayer(3),
+      layers: layers,
+      L: { n: pad(layer) },
+      panel: [Object.assign({ key: layer }, LAYERS[layer])].map(function (p) { return p; }),
+      sepCls: 'model-control' + (exploded ? ' on' : ''),
+      sepPressed: exploded ? 'true' : 'false',
+      sepLabel: exploded ? 'Bring layers together' : 'Separate the layers',
+      toggleSep: function () { clearTimeout(self._auto); self.stopPlay(); self.set({ exploded: !self.st().exploded, playing: false }); },
+      playCls: 'model-control model-play' + (s.playing ? ' on' : ''),
+      playPressed: s.playing ? 'true' : 'false',
+      playLabel: s.playing ? 'Pause the model' : (s.played ? 'Replay the model' : 'Play the model'),
+      playStatus: s.status || '',
+      togglePlay: function () { clearTimeout(self._auto); if (self.st().playing) self.stopPlay(); else self.startPlay(); },
+      courses: courses, progLinks: progLinks,
+      openFirst: function () { var o = Object.assign({}, self.st().open || {}); o['course-extraction'] = true; self.set({ open: o, cur: 'course-extraction' }); },
+      roles: roles, R: R, ask: askMap,
+      mail: mail,
+      contactNote: interest ? 'Topic: ' + interest + '. Opens a draft in your email app.' : 'Opens your email app. Your message goes directly to Dan.',
+      copied: s.copied || '',
+      copyEmail: function () {
+        try {
+          navigator.clipboard.writeText('info@danasher.co.il').then(function () { self.set({ copied: 'Email address copied.' }); }, function () { self.set({ copied: 'Copy the address above: info@danasher.co.il' }); });
+        } catch (e) { self.set({ copied: 'Copy the address above: info@danasher.co.il' }); }
+      },
+      privacy: !!s.privacy,
+      openPrivacy: function () { self.set({ privacy: true }); },
+      closePrivacy: function () { self.set({ privacy: false }); },
+      track: function (e) {
+        var el = e.currentTarget; var b = el.getBoundingClientRect();
+        el.style.setProperty('--mx', (((e.clientX - b.left) / b.width) - 0.5).toFixed(3));
+        el.style.setProperty('--my', (((e.clientY - b.top) / b.height) - 0.5).toFixed(3));
+      },
+      untrack: function (e) { e.currentTarget.style.setProperty('--mx', '0'); e.currentTarget.style.setProperty('--my', '0'); }
+    };
+  }
+}
+</script>
+</body>
+</html>
