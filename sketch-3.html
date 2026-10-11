@@ -1617,6 +1617,69 @@ html.credential-viewer-open{scrollbar-gutter:stable}
 }
 @media(prefers-reduced-motion:reduce){.sketch-atlas .atlas-glyph,.sketch-atlas .atlas-field{animation:none!important;transition:none!important}}
 
+/* Reader-led model: a compact selector attached directly to a legible explanation. */
+.sketch-light.sketch-atlas .expertise-card{scroll-margin-top:112px}
+.sketch-light.sketch-atlas .model-reading{gap:0;padding:30px 26px}
+.sketch-light.sketch-atlas .model-reading>h2{font-size:23px;line-height:1.28;letter-spacing:-.025em;margin:0 0 21px;color:#385668;font-weight:500}
+.sketch-light.sketch-atlas .layer-tabs{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;padding:9px 9px 0;background:#e9f1f5;border:1px solid #c7dae4;border-bottom:0;border-radius:7px 7px 0 0}
+.sketch-light.sketch-atlas .layer-tab{display:flex!important;flex-direction:column;align-items:center!important;justify-content:center;gap:7px!important;min-height:78px!important;padding:10px 3px 13px!important;border:1px solid #bed1dc!important;border-bottom:3px solid var(--layer-color)!important;border-radius:4px 4px 0 0;background:#fff!important;text-align:center;box-shadow:none;overflow:visible}
+.sketch-light.sketch-atlas .layer-tab>span:not(.tab-time){width:24px;height:24px;min-width:24px;font-size:10px;color:#fff}
+.sketch-light.sketch-atlas .layer-tab strong,.sketch-light.sketch-atlas .layer-tab[data-layer="3"] strong{font-size:17px;line-height:1.15;letter-spacing:-.025em;white-space:nowrap}
+.sketch-light.sketch-atlas .layer-tab:after,.sketch-light.sketch-atlas .layer-tab[aria-selected=true]:before{display:none}
+.sketch-light.sketch-atlas .layer-tab[aria-selected=true]{background:#fff1cc!important;border-color:#c4993b!important;border-bottom-color:#dcae4d!important;color:#14394f!important;box-shadow:none}
+.sketch-light.sketch-atlas .layer-tab[aria-selected=true]>span:not(.tab-time){background:#173f56;color:#fff}
+.sketch-light.sketch-atlas .layer-tab:hover{background:#edf6fa!important}
+.sketch-light.sketch-atlas .layer-tab[aria-selected=true]:hover{background:#ffebba!important}
+.sketch-light.sketch-atlas .tab-time{display:none}
+.sketch-light.sketch-atlas .layer-panel{min-height:0;max-width:none;padding:24px 23px;background:#fff;border:1px solid #c7dae4;border-top:3px solid #dcae4d;border-radius:0 0 7px 7px;box-shadow:0 9px 24px -23px #173f56;color:#163a4f;opacity:1;transform:none}
+.sketch-light.sketch-atlas .model-reading-context{display:flex;align-items:center;gap:9px;margin:0 0 14px;font-family:'Dimension Body',sans-serif;font-size:12px;line-height:1;font-weight:700;letter-spacing:.09em;color:#214e66}
+.sketch-light.sketch-atlas .model-reading-context>span{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:#f1c15d;color:#183b4d;font-family:'Dimension Mono',monospace;letter-spacing:0;font-size:11px}
+.sketch-light.sketch-atlas .model-reading-context strong{font-weight:700}
+.sketch-light.sketch-atlas .layer-panel h3{font-size:24px;line-height:1.22;margin:0 0 10px;color:#123a51;font-weight:600}
+.sketch-light.sketch-atlas .layer-panel .layer-question{font-family:'Dimension Body',sans-serif;font-style:normal;font-weight:600;letter-spacing:-.02em;font-size:19px;line-height:1.4;margin:0 0 14px;color:#285f79}
+.sketch-light.sketch-atlas .layer-panel .layer-description{font-size:17px;line-height:1.7;font-weight:400;color:#25495d;margin:0;opacity:1}
+.sketch-light.sketch-atlas .layer-method{display:flex;flex-direction:column;gap:7px;margin:20px 0 0!important;padding-top:16px!important;border-top:1px solid #c9dce6!important;font-size:15px!important;line-height:1.5!important;color:#244f64!important}
+.sketch-light.sketch-atlas .layer-method strong{font-size:12px!important;font-weight:600!important;line-height:1.4;color:#365f72!important;letter-spacing:.025em}
+.sketch-light.sketch-atlas .layer-method span{font-size:15px;line-height:1.5;color:#214e66}
+.sketch-light.sketch-atlas .card-bottom{margin-top:18px;padding-top:13px!important}
+@media(min-width:761px) and (max-width:1100px){
+ .sketch-light.sketch-atlas .model-reading{padding:24px 19px}
+ .sketch-light.sketch-atlas .layer-tabs{padding:7px 5px 0;gap:4px}
+ .sketch-light.sketch-atlas .layer-tab strong,.sketch-light.sketch-atlas .layer-tab[data-layer="3"] strong{font-size:14px}
+ .sketch-light.sketch-atlas .layer-panel{padding:22px 18px}
+}
+@media(max-width:760px){
+ .sketch-light.sketch-atlas .expertise-card{overflow:visible;scroll-margin-top:96px;background:#e4eef3}
+ .sketch-light.sketch-atlas .model-stage{padding:19px 14px 12px;gap:4px;border-radius:7px 7px 0 0;min-height:0}
+ .sketch-light.sketch-atlas .card-top{margin:0;padding:0 2px 11px;gap:10px;border-bottom:1px solid #c3d7e2}
+ .sketch-light.sketch-atlas .card-top .eyebrow{font-size:12px;line-height:1.35;letter-spacing:.04em}
+ .sketch-light.sketch-atlas .card-index{font-size:8px;max-width:78px}
+ .sketch-light.sketch-atlas .model-step-count{padding-left:9px}
+ .sketch-light.sketch-atlas .onion-viewport{width:calc(100% + 20px);max-width:460px;aspect-ratio:940/620;min-height:0;height:auto;flex:0 0 auto;margin:4px -10px 0;align-self:center}
+ .sketch-light.sketch-atlas .model-tools{margin-top:0}
+ .sketch-light.sketch-atlas .model-btns{gap:7px}
+ .sketch-light.sketch-atlas .model-control{font-size:10.5px;padding:9px 10px;min-height:44px}
+ .sketch-light.sketch-atlas .model-reading{padding:17px 13px 16px;background:#e4eef3;border:0;border-radius:0 0 7px 7px;gap:0}
+ .sketch-light.sketch-atlas .model-reading>h2{font-size:19px;line-height:1.35;font-weight:500;margin-bottom:16px;letter-spacing:-.02em;color:#38596c;padding-inline:3px}
+ .sketch-light.sketch-atlas .layer-tabs{padding:7px 6px 0;gap:4px;background:#d3e3ec;border-color:#aac6d6}
+ .sketch-light.sketch-atlas .layer-tab{min-height:73px!important;padding:9px 2px 12px!important;gap:7px!important}
+ .sketch-light.sketch-atlas .layer-tab strong,.sketch-light.sketch-atlas .layer-tab[data-layer="3"] strong{font-size:15px;line-height:1.15;letter-spacing:-.035em}
+ .sketch-light.sketch-atlas .layer-tab>span:not(.tab-time){width:23px;height:23px;min-width:23px;font-size:10px}
+ .sketch-light.sketch-atlas .layer-panel{padding:23px 20px 24px;border-color:#aac6d6;border-top-color:#dcae4d;scroll-margin-top:104px}
+ .sketch-light.sketch-atlas .model-reading-context{font-size:12px;margin-bottom:15px}
+ .sketch-light.sketch-atlas .layer-panel h3{font-size:23px;line-height:1.25;margin-bottom:11px}
+ .sketch-light.sketch-atlas .layer-panel .layer-question{font-size:18px;line-height:1.4;margin-bottom:14px}
+ .sketch-light.sketch-atlas .layer-panel .layer-description{font-size:17px;line-height:1.7;color:#24495e}
+ .sketch-light.sketch-atlas .card-bottom{padding-inline:3px;margin-top:15px;border-top-color:#bfd3df!important}
+}
+@media(max-width:360px){
+ .sketch-light.sketch-atlas .model-reading{padding-inline:9px}
+ .sketch-light.sketch-atlas .layer-tabs{padding-inline:4px;gap:3px}
+ .sketch-light.sketch-atlas .layer-tab strong,.sketch-light.sketch-atlas .layer-tab[data-layer="3"] strong{font-size:13px}
+ .sketch-light.sketch-atlas .layer-panel{padding-inline:17px}
+ .sketch-light.sketch-atlas .model-control{padding-inline:8px;font-size:10px}
+}
+
 </style>
 </head>
 <body class="da sketch-light sketch-atlas">
@@ -1732,7 +1795,7 @@ html.credential-viewer-open{scrollbar-gutter:stable}
           <button role="tab" id="layer-tab-2" aria-controls="layer-panel" aria-selected="false" tabindex="-1" data-layer="2" class="layer-tab"><span>03</span><strong>Why</strong><span class="tab-time" aria-hidden="true"><i></i></span></button>
           <button role="tab" id="layer-tab-3" aria-controls="layer-panel" aria-selected="true" data-layer="3" class="layer-tab"><span>04</span><strong>Show me</strong><span class="tab-time" aria-hidden="true"><i></i></span></button>
         </div>
-        <div id="layer-panel" class="layer-panel" role="tabpanel" aria-labelledby="layer-tab-3" tabindex="0">
+        <div id="layer-panel" class="layer-panel" role="tabpanel" aria-labelledby="layer-tab-3" tabindex="0"><p class="model-reading-context" aria-hidden="true"><span>01</span><strong>What</strong></p>
           <h3>Expertise in action</h3>
           <p class="layer-question">Can you show me?</p>
           <p class="layer-description">At the core is ability that an expert can demonstrate but cannot fully put into words. Others develop this ability through observation, guided practice and feedback.</p>
@@ -2122,59 +2185,63 @@ privacyDialog.addEventListener('click', event => {
 document.querySelector('#year').textContent = String(new Date().getFullYear());
 </script><script>(function(){
  'use strict';
- var card=document.querySelector('#expertise-card'),tabs=Array.from(document.querySelectorAll('.layer-tab')),separate=document.querySelector('#model-separate'),controls=[document.querySelector('#model-play'),document.querySelector('#motion-toggle')],status=document.querySelector('#model-status'),reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
- var state={layer:3,peel:false,exploded:false,playing:!reduce.matches,running:false},timer=null,stepSelecting=false,ready=false,modelVisible=true,keyboardHold=false,readingHold=false,total=5200,remaining=1800,deadline=0,meter=null;
- function canRun(){return ready&&state.playing&&modelVisible&&!document.hidden&&!keyboardHold&&!readingHold;}
- function announceClock(){
-  if(meter){meter.cancel();meter=null;}
-  card.querySelectorAll('.tab-time i').forEach(function(el){el.style.transform='scaleX(0)';});
-  var el=tabs[state.layer].querySelector('.tab-time i'),progress=Math.max(0,1-remaining/total);
-  el.style.transform='scaleX('+progress+')';
-  if(canRun()&&typeof el.animate==='function')meter=el.animate([{transform:'scaleX('+progress+')'},{transform:'scaleX(1)'}],{duration:remaining,easing:'linear',fill:'forwards'});
- }
- function render(){
-  state.running=canRun();card.classList.toggle('model-exploded',state.exploded);card.classList.toggle('model-running',state.running);
-  [1,2,3].forEach(function(i){card.classList.toggle('peel-'+i,state.peel&&!state.exploded&&state.layer===i);});
-  separate.setAttribute('aria-pressed',String(state.exploded));separate.classList.toggle('on',state.exploded);
-  document.querySelector('#sep-label').textContent=state.exploded?'Bring layers together':'Separate the layers';
-  controls.forEach(function(button){button.setAttribute('aria-pressed',String(state.playing));button.classList.toggle('on',state.playing);button.querySelector('span').textContent=state.playing?'Pause animation':'Play animation';button.setAttribute('aria-label',state.playing?'Pause animation':'Play animation');});
-  document.body.classList.toggle('motion-user-paused',!state.playing);document.body.classList.toggle('motion-page-hidden',!!document.hidden);
-  document.querySelector('#model-step-current').textContent=String(state.layer+1).padStart(2,'0');
-  window.dispatchEvent(new CustomEvent('onion-state',{detail:Object.assign({},state)}));
- }
- function suspend(){if(timer!==null){remaining=Math.max(0,deadline-performance.now());clearTimeout(timer);timer=null;}if(meter)meter.pause();}
- function next(){
-  timer=null;remaining=0;window.onionKeyboard=false;stepSelecting=true;tabs[(state.layer+1)%4].click();stepSelecting=false;total=5200;remaining=total;update();
- }
+ const card=document.querySelector('#expertise-card');
+ const tabs=Array.from(card.querySelectorAll('.layer-tab'));
+ const separate=card.querySelector('#model-separate');
+ const controls=[card.querySelector('#model-play'),document.querySelector('#motion-toggle')];
+ const status=card.querySelector('#model-status');
+ const reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
+ const state={layer:3,peel:false,exploded:false,playing:!reduce.matches,running:false};
+ let ready=false,modelVisible=true,keyboardHold=false,readingHold=false;
+ // Motion can play, but it never changes the layer or the explanation being read.
  function update(){
-  suspend();render();announceClock();
-  if(canRun()){deadline=performance.now()+remaining;timer=setTimeout(next,remaining);}
+  state.running=ready&&state.playing&&modelVisible&&!document.hidden&&!keyboardHold&&!readingHold;
+  card.classList.toggle('model-exploded',state.exploded);
+  card.classList.toggle('model-running',state.running);
+  [1,2,3].forEach(i=>card.classList.toggle('peel-'+i,state.peel&&!state.exploded&&state.layer===i));
+  separate.setAttribute('aria-pressed',String(state.exploded));
+  separate.classList.toggle('on',state.exploded);
+  document.querySelector('#sep-label').textContent=state.exploded?'Bring layers together':'Separate the layers';
+  controls.forEach(button=>{
+   button.setAttribute('aria-pressed',String(state.playing));button.classList.toggle('on',state.playing);
+   const label=state.playing?'Pause animation':'Play animation';
+   button.querySelector('span').textContent=label;button.setAttribute('aria-label',label);
+  });
+  document.body.classList.toggle('motion-user-paused',!state.playing);
+  document.body.classList.toggle('motion-page-hidden',!!document.hidden);
+  document.querySelector('#model-step-current').textContent=String(state.layer+1).padStart(2,'0');
+  window.dispatchEvent(new CustomEvent('onion-state',{detail:{...state}}));
  }
- function resetClock(duration){suspend();total=duration;remaining=duration;update();}
- window.addEventListener('spec-layer-change',function(e){
-  state.layer=e.detail.layer;state.peel=true;
-  if(stepSelecting){render();return;}
-  resetClock(12000);status.textContent='Layer '+(state.layer+1)+': '+['What','How','Why','Show me'][state.layer]+'.';
+ window.addEventListener('spec-layer-change',event=>{
+  state.layer=event.detail.layer;state.peel=true;update();
+  status.textContent='Layer '+(state.layer+1)+': '+['What','How','Why','Show me'][state.layer]+'.';
  });
- separate.addEventListener('click',function(){state.exploded=!state.exploded;resetClock(8000);});
- controls.forEach(function(control){control.addEventListener('click',function(){
-  suspend();state.playing=!state.playing;keyboardHold=false;readingHold=false;
+ separate.addEventListener('click',()=>{state.exploded=!state.exploded;update();});
+ controls.forEach(control=>control.addEventListener('click',()=>{
+  state.playing=!state.playing;keyboardHold=false;readingHold=false;
   status.textContent=state.playing?'Animation is playing.':'Animation is paused.';update();
- });});
- card.addEventListener('keydown',function(e){if(e.target.closest('.layer-tab,#layer-panel,.model-layer,.onion-hotspot')){keyboardHold=true;window.onionKeyboard=true;update();var tab=e.target.closest('.layer-tab');if(tab&&(e.key==='ArrowDown'||e.key==='ArrowUp')){e.preventDefault();var next=(tabs.indexOf(tab)+(e.key==='ArrowDown'?1:3))%4;tabs[next].click();tabs[next].focus();}}},true);
- card.addEventListener('pointerdown',function(){keyboardHold=false;window.onionKeyboard=false;});
- card.addEventListener('focusout',function(){setTimeout(function(){if(!card.contains(document.activeElement)){keyboardHold=false;update();}},0);});
+ }));
+ card.addEventListener('keydown',event=>{
+  if(!event.target.closest('.layer-tab,#layer-panel,.model-layer,.onion-hotspot'))return;
+  keyboardHold=true;window.onionKeyboard=true;update();
+  const tab=event.target.closest('.layer-tab');
+  if(tab&&(event.key==='ArrowDown'||event.key==='ArrowUp')){
+   event.preventDefault();const next=(tabs.indexOf(tab)+(event.key==='ArrowDown'?1:3))%4;
+   tabs[next].click();tabs[next].focus();
+  }
+ },true);
+ card.addEventListener('pointerdown',()=>{keyboardHold=false;window.onionKeyboard=false;});
+ card.addEventListener('focusout',()=>{setTimeout(()=>{if(!card.contains(document.activeElement)){keyboardHold=false;update();}},0);});
  if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){
-  var reading=card.querySelector('.model-reading');reading.addEventListener('pointerenter',function(){readingHold=true;update();});reading.addEventListener('pointerleave',function(){readingHold=false;update();});
+  const reading=card.querySelector('.model-reading');
+  reading.addEventListener('pointerenter',()=>{readingHold=true;update();});
+  reading.addEventListener('pointerleave',()=>{readingHold=false;update();});
  }
  document.addEventListener('visibilitychange',update);
- reduce.addEventListener('change',function(e){suspend();if(e.matches)state.playing=false;update();});
- window.DanMotion={
-  getState:function(){return Object.assign({},state);},
-  ready:function(){ready=true;update();},
-  setModelVisible:function(value){if(modelVisible===value)return;modelVisible=value;update();}
- };
- render();
+ reduce.addEventListener('change',event=>{if(event.matches)state.playing=false;update();});
+ window.DanMotion={getState:()=>({...state}),ready:()=>{ready=true;update();},setModelVisible:value=>{if(modelVisible!==value){modelVisible=value;update();}}};
+ update();
+
  // Secondary course navigation owns selection and scrolls only after disclosure layout settles.
  var courses=Array.from(document.querySelectorAll('.course')),courseLinks=Array.from(document.querySelectorAll('.program-links a')),header=document.querySelector('.site-header'),finder=document.querySelector('.program-navigation'),rail=finder.querySelector('.program-links'),activeCourse=null,navigationRun=0;
  function measureNavigation(){
@@ -2430,15 +2497,24 @@ document.querySelector('#year').textContent = String(new Date().getFullYear());
 </script><script>(()=>{(()=>{"use strict";let Y=document.querySelector("#expertise-card"),f=document.querySelector("#onion-model"),L=f.querySelector(".model-shells"),y=[...f.querySelectorAll(".model-layer")],h=[...document.querySelectorAll(".layer-tab")],w=f.closest(".onion-viewport"),C=[...Y.querySelectorAll(".separated-labels span")],g=matchMedia("(prefers-reduced-motion: reduce)"),I=[161.5,171,178.5,191],U=[303,275,248,232],o={layer:3,peel:!1,exploded:!1,playing:!1,running:!1},v=[...w.querySelectorAll("[data-onion-select]")],V=[[126,106],[248,68],[133,214],[210,149]],O=[0,1,2].map(t=>f.querySelector(".leader-"+t)),q=[0,1,2].map(t=>f.querySelector(".anchor-"+t)),G=[...f.querySelectorAll("[data-annotation]")],c=y.map(()=>({x:0,y:0,r:0,s:1,a:1})),a=null,u=0,b=!0,A=940,S=620,R="",x=0;L.style.transform="translate(60px,4px) scale(1.88)",L.style.transformOrigin="0 0",L.style.transformBox="view-box";let H=()=>y.map(()=>({x:0,y:0,r:0,s:1,a:1}));function K(){let t=H();if(o.exploded){let n=A<490,e=n?[263,675,306,675]:[180,456,666,830],r=n?[185,185,480,480]:[300,300,300,300],i=n?.57:.54;t.forEach((s,l)=>{s.s=i,s.x=(e[l]-60)/1.88-210,s.y=(r[l]-4)/1.88-170-(I[l]-170)*i,l===o.layer&&(s.y-=5,s.s+=.012)})}else o.peel&&(o.layer>0&&(t[0]={x:-34,y:-27,r:-9,s:1,a:.64}),o.layer>1&&(t[1]={x:-16,y:-12,r:-5,s:1,a:.76}),o.layer>2&&(t[2]={x:17,y:13,r:4,s:1,a:.84},t[3]={x:43,y:30,r:6,s:1,a:1}));return t}function $(t,n,e){let r=e.r*Math.PI/180,i=(t-210)*e.s,s=(n-170)*e.s;return{x:60+1.88*(210+e.x+i*Math.cos(r)-s*Math.sin(r)),y:4+1.88*(170+e.y+i*Math.sin(r)+s*Math.cos(r))}}function m(t=0){let n=Math.min(A/940,S/620),e=(A-940*n)/2,r=(S-620*n)/2;c.forEach((i,s)=>{let l=x?Math.sin(t*.00105+s*.67)*1.6:0,d={...i,y:i.y+l,r:i.r+(x?Math.sin(t*8e-4+s)*.23:0)};y[s].style.transform=`translate(${d.x}px,${d.y}px) rotate(${d.r}deg) scale(${d.s})`,y[s].style.opacity=d.a;let z=$(210,U[s]+14,d);C[s].style.transform=`translate(${e+z.x*n}px,${r+z.y*n}px) translateX(-50%)`;let B=$(...o.exploded?[210,s===3?108:I[s]]:V[s],d);if(v[s].style.transform=`translate(${e+B.x*n}px,${r+B.y*n}px) translate(-50%,-50%)`,s<3){let J=[[283,86],[324,210],[132,213]],M=$(...J[s],d);O[s].setAttribute("d",`M${M.x.toFixed(2)} ${M.y.toFixed(2)}L${s<2?865:80} ${[149,286,434][s]}`),q[s].setAttribute("cx",M.x),q[s].setAttribute("cy",M.y)}})}function E(){return b&&!document.hidden&&!g.matches}function j(t){if(u=0,a){let n=Math.min(1,(t-a.start)/a.duration),e=1-Math.pow(1-n,4);c=a.from.map((r,i)=>{let s={};return Object.keys(r).forEach(l=>s[l]=r[l]+(a.to[i][l]-r[l])*e),s}),n>=1&&(c=a.to,a=null)}x=E()&&o.running?1:0,m(t),E()&&(a||x)&&(u=requestAnimationFrame(j))}function p(){a&&a.start===1/0&&(a.start=performance.now()),!u&&E()&&(u=requestAnimationFrame(j))}function D(t,n=1100){if(!E()||window.onionKeyboard){c=t,a=null,m(),p();return}a={from:c.map(e=>({...e})),to:t,start:performance.now(),duration:n},p()}function k(t=!1){cancelAnimationFrame(u),u=0,x=0,a&&(t?(c=a.to,a=null):a.start!==1/0&&(a.duration=Math.max(120,a.duration-(performance.now()-a.start)),a.from=c.map(n=>({...n})),a.start=1/0)),m()}y.forEach((t,n)=>{t.addEventListener("click",()=>{window.onionKeyboard=!1,h[n].click()}),t.addEventListener("keydown",e=>{if(window.onionKeyboard=!0,(e.key==="Enter"||e.key===" ")&&(e.preventDefault(),h[n].click()),["ArrowLeft","ArrowRight","Home","End"].includes(e.key)){e.preventDefault();let r=e.key==="Home"?0:e.key==="End"?3:(n+(e.key==="ArrowRight"?1:3))%4;y[r].focus(),h[r].click()}})}),v.forEach((t,n)=>{t.addEventListener("click",e=>{window.onionKeyboard=e.detail===0,h[n].click()}),t.addEventListener("keydown",e=>{if(["ArrowLeft","ArrowRight","ArrowUp","ArrowDown","Home","End"].includes(e.key)){e.preventDefault(),window.onionKeyboard=!0;let r=e.key==="Home"?0:e.key==="End"?3:(n+(["ArrowRight","ArrowDown"].includes(e.key)?1:3))%4;v[r].focus(),h[r].click()}})}),window.addEventListener("onion-state",t=>{Object.assign(o,t.detail),y.forEach((e,r)=>{e.setAttribute("aria-pressed",String(o.layer===r)),e.classList.toggle("is-active",o.layer===r)}),v.forEach((e,r)=>e.setAttribute("aria-pressed",String(o.layer===r))),G.forEach((e,r)=>e.classList.toggle("is-active",r===o.layer)),O.forEach((e,r)=>e.classList.toggle("is-active",r===o.layer)),q.forEach((e,r)=>e.classList.toggle("is-active",r===o.layer)),f.classList.toggle("is-separated",o.exploded);let n=[o.layer,o.peel,o.exploded].join(":");n!==R?(R=n,D(K(),o.exploded?1300:1150)):o.running?p():k()});function P(){let t=w.getBoundingClientRect();A=t.width||940,S=t.height||620,o.exploded?D(K(),450):m()}typeof ResizeObserver<"u"&&new ResizeObserver(P).observe(w),P(),typeof IntersectionObserver<"u"&&new IntersectionObserver(t=>{b=t[0].isIntersecting,window.DanMotion?.setModelVisible(b),b?p():k()},{threshold:.04}).observe(w),document.addEventListener("visibilitychange",()=>{document.hidden?k():p()}),g.addEventListener("change",()=>{g.matches?k(!0):p()}),g.matches?m():(c=[{x:-47,y:15,r:-12,s:.96,a:.18},{x:35,y:-24,r:9,s:.96,a:.18},{x:-20,y:34,r:-9,s:.96,a:.18},{x:40,y:23,r:11,s:.96,a:.18}],m(),D(H(),1800)),window.DanMotion?.ready();let F=0;function X(){F=0;let t=document.documentElement.scrollHeight-innerHeight;document.querySelector(".reading-progress").style.transform="scaleX("+(t>0?Math.min(1,scrollY/t):0)+")"}addEventListener("scroll",()=>{F||(F=requestAnimationFrame(X))},{passive:!0}),X()})();})();
 </script><script id="sketch-atlas-interactions">(() => {
   const card = document.querySelector('#expertise-card');
-  const sync = (state) => { card.dataset.activeLayer = String(state.layer); };
-  sync(window.DanMotion?.getState?.() || {layer: 3});
+  const context = card.querySelector('.model-reading-context');
+  const sync = (state) => {
+    card.dataset.activeLayer = String(state.layer);
+    const tab = card.querySelector('.layer-tab[data-layer="' + state.layer + '"]');
+    context.querySelector('span').textContent = String(state.layer + 1).padStart(2, '0');
+    context.querySelector('strong').textContent = tab.querySelector('strong').textContent;
+  };
+  sync(window.DanMotion?.getState?.() || {layer: 0});
   window.addEventListener('onion-state', event => sync(event.detail));
   document.querySelectorAll('#onion-model [data-annotation]').forEach(label => {
     label.addEventListener('click', () => {
       document.querySelector('.layer-tab[data-layer="' + label.dataset.annotation + '"]').click();
     });
   });
-})();</script>
+  // Start with the outer layer; selection remains under the reader's control.
+  card.querySelector('.layer-tab[data-layer="0"]').click();
+})();
+</script>
 </body>
 <!--
 Bundled font licenses
