@@ -2291,6 +2291,34 @@ html.credential-viewer-open{scrollbar-gutter:stable}
  .sketch-light.sketch-atlas.art-directed #expertise-card #layer-panel{padding-inline:16px}
 }
 </style>
+<style id="deep-blue-closing">
+/* The closing section continues the hero's deep petroleum blue. */
+.sketch-light.sketch-atlas.art-directed #contact{background:radial-gradient(ellipse 65% 95% at 90% 25%,#23647a45,transparent 75%),radial-gradient(ellipse 38% 70% at 80% 60%,#b47c3014,transparent 80%),#092936;color:#edf6f8;border-top:1px solid #73aabd36;padding-block:84px}
+.sketch-light.sketch-atlas.art-directed #contact .contact-inner{align-items:center;gap:64px}
+.sketch-light.sketch-atlas.art-directed #contact .contact-inner h2{color:#f1f7f8}
+.sketch-light.sketch-atlas.art-directed #contact .contact-inner .eyebrow{color:#ebbc79}
+.sketch-light.sketch-atlas.art-directed #contact .contact-inner>div>p:not(.eyebrow){color:#bad0db}
+.sketch-light.sketch-atlas.art-directed #contact .contact-options{border-color:#6c9daf4d;padding-left:40px}
+.sketch-light.sketch-atlas.art-directed #contact .contact-eye{position:relative;display:block;inset:auto;z-index:auto;transform:none;opacity:1;width:min(100%,360px);height:auto;aspect-ratio:800/420;margin:-20px auto 8px;pointer-events:none}
+.sketch-light.sketch-atlas.art-directed #contact .contact-eye .he-svg{display:block;width:100%;height:auto;max-height:none;animation:none;filter:none}
+.sketch-light.sketch-atlas.art-directed #contact .contact-eye .he-halo{stroke:#72b6cc;opacity:.18}
+.sketch-light.sketch-atlas.art-directed #contact .contact-eye .eye-gaze{animation:none}
+.sketch-light.sketch-atlas.art-directed #contact .contact-eye .blink{animation-name:closing-eye-blink;animation-duration:9s;animation-delay:1s;animation-timing-function:ease-in-out;transform-origin:400px 210px}
+@keyframes closing-eye-blink{0%,93%,100%{transform:scaleY(1)}95%{transform:scaleY(.035)}97%{transform:scaleY(1)}}
+.sketch-light.sketch-atlas.art-directed #contact .contact-options>.button{background:#edb66d;border-color:#edb66d;color:#102f3e;font-weight:600}
+.sketch-light.sketch-atlas.art-directed #contact .contact-email{color:#ecf7fa}
+.sketch-light.sketch-atlas.art-directed #contact .contact-phone{color:#c3dce5}
+.sketch-light.sketch-atlas.art-directed #contact .contact-note{color:#a4c1ce!important}
+.sketch-light.sketch-atlas.art-directed #contact .copy-email{color:#f1c487}
+.sketch-light.sketch-atlas.art-directed #contact .copy-status{color:#bcd9e5}
+.sketch-light.sketch-atlas.art-directed #contact :is(a,button):focus-visible{outline:2px solid #9edcec;outline-offset:5px}
+.sketch-light.sketch-atlas.art-directed .site-footer{background:#092936;border-top:1px solid #79a8ba30;color:#c5dce5}
+.sketch-light.sketch-atlas.art-directed .site-footer strong{color:#edf5f8}
+.sketch-light.sketch-atlas.art-directed .site-footer :is(span,a,button,small){color:#a9c5d1}
+@media(hover:hover) and (pointer:fine){.sketch-light.sketch-atlas.art-directed #contact .contact-options>.button:hover{background:#f5c78b;border-color:#f5c78b}.sketch-light.sketch-atlas.art-directed .site-footer :is(a,button):hover{color:#f0c486}}
+@media(max-width:800px){.sketch-light.sketch-atlas.art-directed #contact{padding-block:64px}.sketch-light.sketch-atlas.art-directed #contact .contact-inner{grid-template-columns:1fr;gap:32px}.sketch-light.sketch-atlas.art-directed #contact .contact-options{padding:26px 0 0;border-left:0;border-top:1px solid #6c9daf4d}.sketch-light.sketch-atlas.art-directed #contact .contact-eye{width:min(100%,310px);margin:0 auto 16px}}
+@media(prefers-reduced-motion:reduce){.sketch-light.sketch-atlas.art-directed #contact .contact-eye *{animation:none!important}}
+</style>
 </head>
 <body class="da sketch-light sketch-atlas art-directed">
   <a class="skip-link" href="#main">Skip to content</a>
@@ -2549,10 +2577,36 @@ html.credential-viewer-open{scrollbar-gutter:stable}
     </section>
 
     <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-inner"><div><p class="eyebrow">LET’S START WITH YOUR CHALLENGE</p><h2 id="contact-title">What should your people<br>be able to do next?</h2><p>Tell Dan about your people, your knowledge challenge and the capabilities you want to develop. Start with a course or workshop, an assessment of your KM practices, or a review of your knowledge systems.</p></div><div class="contact-options"><div class="contact-art kinetic-art" aria-hidden="true" data-added-interface="true"><svg class="atlas-glyph" viewBox="0 0 120 120" aria-hidden="true" focusable="false"><path class="hair" d="M8 104h104M19 16h82"/>
-<path class="plane" d="M10 38h100v64H10Z"/><path class="plane-mid" d="m10 102 35-33 15 11 15-11 35 33Z"/>
-<path class="route" d="m10 38 50 42 50-42"/><path class="plane-deep" d="M37 13h46v35L60 67 37 48Z"/>
-<path class="route-light" d="M46 25h27M46 33h27M46 41h17"/><circle class="point" cx="60" cy="80" r="6"/></svg></div><a class="button button-light" id="email-contact" href="mailto:info@danasher.co.il?subject=Knowledge%20management%20training%20and%20assessment">Discuss training or assessment</a><a class="contact-email" href="mailto:info@danasher.co.il">info@danasher.co.il</a><a class="contact-phone" href="tel:+972503490606">+972 50 349 0606</a><p id="contact-context" class="contact-note">Opens your email app. Your message goes directly to Dan.</p><button type="button" class="copy-email" id="copy-email">Copy email address</button><span class="copy-status" id="copy-status" role="status"></span></div></div>
+      <div class="container contact-inner"><div><p class="eyebrow">LET’S START WITH YOUR CHALLENGE</p><h2 id="contact-title">What should your people<br>be able to do next?</h2><p>Tell Dan about your people, your knowledge challenge and the capabilities you want to develop. Start with a course or workshop, an assessment of your KM practices, or a review of your knowledge systems.</p></div><div class="contact-options"><div class="contact-eye" aria-hidden="true"><svg class="he-svg" viewbox="0 0 800 420" id="contact-living-eye" aria-hidden="true">
+<defs>
+<lineargradient id="contact-heLid" x1="30" y1="0" x2="770" y2="0" gradientunits="userSpaceOnUse"><stop offset="0" style="stop-color:#5fc3d6"></stop><stop offset=".3" style="stop-color:#d9eef2"></stop><stop offset=".7" style="stop-color:#d9eef2"></stop><stop offset="1" style="stop-color:#5fc3d6"></stop></lineargradient>
+<lineargradient id="contact-heIris" x1="235" y1="0" x2="565" y2="0" gradientunits="userSpaceOnUse"><stop offset="0" style="stop-color:#3fa7bf"></stop><stop offset="1" style="stop-color:#1d6578"></stop></lineargradient>
+<lineargradient id="contact-heSweep" x1="400" y1="40" x2="520" y2="100" gradientunits="userSpaceOnUse"><stop offset="0" style="stop-color:#5fc3d6;stop-opacity:0"></stop><stop offset="1" style="stop-color:#5fc3d6;stop-opacity:.38"></stop></lineargradient>
+<radialgradient id="contact-heCore" cx=".42" cy=".4" r=".7"><stop offset="0" style="stop-color:#fff3d6"></stop><stop offset=".5" style="stop-color:#ffc35a"></stop><stop offset="1" style="stop-color:#f59a22"></stop></radialgradient>
+</defs>
+<g class="blink">
+<path class="he-lid" stroke="url(#contact-heLid)" d="M30 210 C130 140 230 34 400 30 C570 34 670 140 770 210 C670 280 570 386 400 390 C230 386 130 280 30 210 Z"></path>
+<g>
+<circle class="pt" cx="400" cy="210" r="4" style="--dx:-330px;--dy:-6px;--d:0s"></circle>
+<circle class="pt" cx="400" cy="210" r="3" style="--dx:330px;--dy:30px;--d:.5s"></circle>
+<circle class="pt" cx="400" cy="210" r="3.5" style="--dx:-230px;--dy:-130px;--d:1s"></circle>
+<circle class="pt" cx="400" cy="210" r="3" style="--dx:250px;--dy:-120px;--d:1.5s"></circle>
+<circle class="pt" cx="400" cy="210" r="4" style="--dx:-250px;--dy:120px;--d:2s"></circle>
+<circle class="pt" cx="400" cy="210" r="3" style="--dx:220px;--dy:140px;--d:2.5s"></circle>
+</g>
+<g class="eye-gaze">
+<path class="he-halo" d="M385.6 45.6 A165 165 0 0 1 542.9 127.5"></path>
+<path class="he-halo" d="M414.4 374.4 A165 165 0 0 1 257.1 292.5"></path>
+<g class="spin-slow"><path fill="url(#contact-heSweep)" d="M400 210 L400 40 A170 170 0 0 1 520.2 89.8 Z"></path></g>
+<g class="ring-in" style="--d:.8s"><circle class="r1" stroke="url(#contact-heIris)" cx="400" cy="210" r="165"></circle></g>
+<circle class="gr" cx="400" cy="210" r="143"></circle>
+<g class="ring-in" style="--d:1s"><circle class="r2" cx="400" cy="210" r="122"></circle></g>
+<circle class="gr gr-rev" cx="400" cy="210" r="102"></circle>
+<g class="ring-in" style="--d:1.2s"><circle class="r3" cx="400" cy="210" r="82"></circle></g>
+<g class="ring-in" style="--d:1.4s"><circle class="core-glow" cx="400" cy="210" r="56"></circle><circle fill="url(#contact-heCore)" cx="400" cy="210" r="46"></circle><circle class="glint" cx="383" cy="192" r="9"></circle></g>
+</g>
+</g>
+</svg></div><a class="button button-light" id="email-contact" href="mailto:info@danasher.co.il?subject=Knowledge%20management%20training%20and%20assessment">Discuss training or assessment</a><a class="contact-email" href="mailto:info@danasher.co.il">info@danasher.co.il</a><a class="contact-phone" href="tel:+972503490606">+972 50 349 0606</a><p id="contact-context" class="contact-note">Opens your email app. Your message goes directly to Dan.</p><button type="button" class="copy-email" id="copy-email">Copy email address</button><span class="copy-status" id="copy-status" role="status"></span></div></div>
     </section>
   </main>
 
