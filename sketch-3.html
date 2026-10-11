@@ -2035,16 +2035,25 @@ html.credential-viewer-open{scrollbar-gutter:stable}
 
 </style>
 <style id="hero-course-focus">
-/* One continuous atmospheric canvas: warm light at the copy, deep blue under the eye. */
-.sketch-light.sketch-atlas.art-directed .hero.container{background:radial-gradient(ellipse 70% 54% at 100% 35%,#dc966438 0%,#dc966412 45%,transparent 76%),linear-gradient(100deg,#f2eadd 0%,#eaf0eb 21%,#d8e8ed 40%,#91b7ca 53%,#38677f 65%,#143c55 80%,#18394f 100%);overflow:clip}
-.sketch-light.sketch-atlas.art-directed .hero:before{inset:0;height:auto;background:linear-gradient(180deg,#d5e7ee12,transparent 62%,#dce9ef36);mask-image:none;-webkit-mask-image:none;z-index:-1}
-.sketch-light.sketch-atlas.art-directed .hero-eye:before,.sketch-light.sketch-atlas.art-directed .hero-eye:after{display:none;content:none}
+/* Background colors matched to the user's reference at /DAN-ASHER/. */
+.sketch-light.sketch-atlas.art-directed .hero.container{background:#082530;overflow:clip}
+.sketch-light.sketch-atlas.art-directed .hero:before{inset:0;height:auto;background:radial-gradient(at 78% 32%,#17455388,transparent 52%);mask-image:none;-webkit-mask-image:none;z-index:-1}
+.sketch-light.sketch-atlas.art-directed .hero-eye:before{display:block;content:'';position:absolute;inset:-20%;border:0;border-radius:0;background:radial-gradient(#2a8aa01b,transparent 67%);mask-image:none;-webkit-mask-image:none;z-index:-1}
+.sketch-light.sketch-atlas.art-directed .hero-eye:after{display:none;content:none}
+.sketch-light.sketch-atlas.art-directed .hero h1{color:#f3f8f9}
+.sketch-light.sketch-atlas.art-directed .hero h1 em{color:#ffb547}
+.sketch-light.sketch-atlas.art-directed .hero-copy>.eyebrow{color:#9fcbd8}
+.sketch-light.sketch-atlas.art-directed .hero-copy .short-rule{background:#ffb547}
+.sketch-light.sketch-atlas.art-directed .hero-description{color:#c0d5dc}
+.sketch-light.sketch-atlas.art-directed .hero-audience{color:#8fb6c5}
+.sketch-light.sketch-atlas.art-directed .hero-actions>.text-link{color:#d3e6eb;border-color:#82a5b0}
+.sketch-light.sketch-atlas.art-directed .hero-actions>.button{background:#ffb547;border-color:#ffb547;color:#17313c}
 .sketch-light.sketch-atlas.art-directed .hero-eye{background:transparent;box-shadow:none;border:0}
 .sketch-light.sketch-atlas.art-directed .hero-eye .he-svg{filter:drop-shadow(0 12px 18px #102c401c)}
 .sketch-light.sketch-atlas.art-directed .hero-eye .he-lid{stroke:url(#heLid);stroke-width:9;opacity:.94}
 .sketch-light.sketch-atlas.art-directed .hero-eye .he-halo{stroke:#8bcdde;opacity:.58}
 .sketch-light.sketch-atlas.art-directed .hero-eye .gr{stroke:#83bbcd;opacity:.4}
-.sketch-light.sketch-atlas.art-directed .hero-eye .eye-motion-control{background:#143c5366;border-color:#bad7e255;color:#e4f1f7;backdrop-filter:none}
+.sketch-light.sketch-atlas.art-directed .hero-eye .eye-motion-control{background:transparent;border-color:#88bbc030;color:#a6cad6;backdrop-filter:none}
 .sketch-light.sketch-atlas.art-directed .hero-eye .eye-motion-control svg{stroke:#efbf81}
 
 /* Courses take the main stage: luminous diagrams, a warm accent, deep blue ink. */
@@ -2156,8 +2165,7 @@ html.credential-viewer-open{scrollbar-gutter:stable}
  .sketch-light.sketch-atlas.art-directed #training .course[open] .course-toggle{right:25px;left:auto;top:25px}
 }
 @media(max-width:760px){
- .sketch-light.sketch-atlas.art-directed .hero.container{background:linear-gradient(157deg,#f0e9dc,#dcebf1 47%,#e3edf1 80%,#edf1ed)}
- .sketch-light.sketch-atlas.art-directed .hero-eye:before{display:block;content:'';inset:-65px -80px -65px;border-radius:0;background:radial-gradient(ellipse at 96% 58%,#d8956230,transparent 68%),linear-gradient(180deg,transparent 0%,#5d859d55 15%,#244e68 33%,#123c56 51%,#2e566e 69%,#93b2c580 87%,transparent 100%);mask-image:none;-webkit-mask-image:none;z-index:-1}
+ .sketch-light.sketch-atlas.art-directed .hero.container{background:#082530}
  .sketch-light.sketch-atlas.art-directed .hero-eye .he-svg{width:108%;filter:none}
  .sketch-light.sketch-atlas.art-directed #training{padding:72px 24px}
  .sketch-light.sketch-atlas.art-directed #training .section-heading{grid-template-columns:1fr;gap:25px;margin-bottom:29px}
