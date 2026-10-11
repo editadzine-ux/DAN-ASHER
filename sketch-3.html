@@ -2034,6 +2034,156 @@ html.credential-viewer-open{scrollbar-gutter:stable}
 }
 
 </style>
+<style id="hero-course-focus">
+/* Shared daylight across the whole opening, with no isolated halo behind the eye. */
+.sketch-light.sketch-atlas.art-directed .hero.container{background:linear-gradient(118deg,#edf2ed 0%,#e6f0f3 32%,#d8e9f0 69%,#e4edf0 100%);overflow:clip}
+.sketch-light.sketch-atlas.art-directed .hero:before{inset:0;height:auto;background:linear-gradient(158deg,#efe7d83d 0%,transparent 43%,#efd9bd38 100%);mask-image:none;-webkit-mask-image:none;z-index:-1}
+.sketch-light.sketch-atlas.art-directed .hero-eye:before,.sketch-light.sketch-atlas.art-directed .hero-eye:after{display:none;content:none}
+.sketch-light.sketch-atlas.art-directed .hero-eye{background:transparent;box-shadow:none;border:0}
+.sketch-light.sketch-atlas.art-directed .hero-eye .he-svg{filter:drop-shadow(0 12px 18px #28546b13)}
+.sketch-light.sketch-atlas.art-directed .hero-eye .he-lid{stroke:#518fa4;stroke-width:9;opacity:.8}
+.sketch-light.sketch-atlas.art-directed .hero-eye .he-halo{stroke:#377b94;opacity:.58}
+.sketch-light.sketch-atlas.art-directed .hero-eye .gr{stroke:#5a91a4;opacity:.38}
+.sketch-light.sketch-atlas.art-directed .hero-eye .eye-motion-control{background:#f5fafb85;border-color:#8bb1c16b;color:#2e6176;backdrop-filter:none}
+
+/* Courses take the main stage: luminous diagrams, a warm accent, deep blue ink. */
+.sketch-light.sketch-atlas.art-directed #training{max-width:none;width:100%;padding-inline:max(5vw,calc((100vw - 1360px)/2));padding-block:120px;background:linear-gradient(135deg,#0b2233 0%,#102f44 58%,#0a2233 100%);color:#edf6fb;border-top:4px solid #e9b16b;border-bottom:1px solid #173c53;position:relative;isolation:isolate}
+.sketch-light.sketch-atlas.art-directed #training .section-heading{grid-template-columns:1.22fr .9fr;gap:75px;align-items:end;margin-bottom:38px}
+.sketch-light.sketch-atlas.art-directed #training .section-heading h2{color:#f2f7fa;font-size:clamp(46px,4.6vw,68px);line-height:1.02;letter-spacing:-.045em}
+.sketch-light.sketch-atlas.art-directed #training .section-heading h2 em{color:#efbe7e;font-weight:400}
+.sketch-light.sketch-atlas.art-directed #training .section-heading .eyebrow{color:#eabc7b;letter-spacing:.16em;margin-bottom:25px;font-size:11px}
+.sketch-light.sketch-atlas.art-directed #training .section-heading>p{color:#b6ccd9;font-size:19px;line-height:1.65}
+.sketch-light.sketch-atlas.art-directed #training .training-intro{border-color:#426074;padding-bottom:34px}
+.sketch-light.sketch-atlas.art-directed #training .training-intro p{color:#b6ccd9}
+.sketch-light.sketch-atlas.art-directed #training .training-intro>span{color:#b6ccd9}
+.sketch-light.sketch-atlas.art-directed #training .program-navigation{background:#0b2639;border-color:#35556a;border-radius:5px;box-shadow:0 12px 30px #06162140;margin-bottom:30px}
+.sketch-light.sketch-atlas.art-directed #training .program-nav-heading{background:#102e42;border-color:#3a596d;color:#dcecf5;padding-block:13px}
+.sketch-light.sketch-atlas.art-directed #training .program-nav-heading :is(span,strong){color:inherit}
+.sketch-light.sketch-atlas.art-directed #training .program-counter{color:#9bb8c9}
+.sketch-light.sketch-atlas.art-directed #training .program-links>a{color:#c5dbe7;background:#0c283b;border-color:#345267;box-shadow:none}
+.sketch-light.sketch-atlas.art-directed #training .program-links>a small{color:#87acbf}
+.sketch-light.sketch-atlas.art-directed #training .program-links>a:hover{background:#1b4057;color:#fff}
+.sketch-light.sketch-atlas.art-directed #training .program-links>a.cur{color:#102d40;background:#e9b36f;border-bottom-color:#f5d6aa}
+.sketch-light.sketch-atlas.art-directed #training .program-links>a.cur small{color:#365363}
+.sketch-light.sketch-atlas.art-directed #training .course-list{gap:24px}
+.sketch-light.sketch-atlas.art-directed #training .course{background:#14384f;border:1px solid #38596e;border-radius:6px;box-shadow:none;transition:border-color 220ms var(--eo),background-color 220ms var(--eo)}
+.sketch-light.sketch-atlas.art-directed #training .course summary{background:linear-gradient(128deg,#163c53,#103247);border-radius:4px;grid-template-columns:68px minmax(0,1fr);grid-template-rows:174px auto;gap:30px 20px;padding:31px 33px 36px}
+.sketch-light.sketch-atlas.art-directed #training .course:nth-child(even) summary{background:linear-gradient(132deg,#14384f,#173e55)}
+.sketch-light.sketch-atlas.art-directed #training .course .course-number{font-family:Dimension,sans-serif;font-size:40px;font-weight:400;line-height:1;letter-spacing:-.06em;color:#6f9cb4}
+.sketch-light.sketch-atlas.art-directed #training .course .course-art{background:none;border:0;border-radius:0;box-shadow:none;height:174px;max-width:290px;filter:none}
+.sketch-light.sketch-atlas.art-directed #training .course .course-art:before,.sketch-light.sketch-atlas.art-directed #training .course .course-art:after{display:none;content:none}
+.sketch-light.sketch-atlas.art-directed #training .course .course-type{color:#ebbc7a;font-size:10px;letter-spacing:.12em}
+.sketch-light.sketch-atlas.art-directed #training .course .course-title{color:#f4f8fc;font-size:35px;line-height:1.08;font-weight:500;max-width:500px}
+.sketch-light.sketch-atlas.art-directed #training .course .course-preview{color:#b9d0dd;font-size:18px;line-height:1.6}
+.sketch-light.sketch-atlas.art-directed #training .course .course-toggle{background:transparent;color:#efbd7e;border:1px solid #8e795c;width:44px;height:44px;left:32px;top:109px;font-size:27px}
+.sketch-light.sketch-atlas.art-directed #training .course[open]{background:#16394f;border-color:#d2a064;box-shadow:0 16px 44px #04142145}
+.sketch-light.sketch-atlas.art-directed #training .course[open] summary{background:#173e55;grid-template-columns:220px minmax(0,1fr);grid-template-rows:auto;padding:33px;gap:35px}
+.sketch-light.sketch-atlas.art-directed #training .course[open] .course-title{font-size:38px;max-width:760px}
+.sketch-light.sketch-atlas.art-directed #training .course[open] .course-number{font-size:17px;letter-spacing:0;color:#a6c7d9;top:19px;left:26px}
+.sketch-light.sketch-atlas.art-directed #training .course[open] .course-art{height:170px;width:220px}
+.sketch-light.sketch-atlas.art-directed #training .course[open] .course-toggle{right:25px;left:auto;top:25px;background:#ebbb7a;color:#18364a;border-color:#ebbb7a}
+.sketch-light.sketch-atlas.art-directed #training .course-content{background:#102d40;border-top:1px solid #426176;color:#c4d9e5}
+.sketch-light.sketch-atlas.art-directed #training .course-explanation>p{color:#c4d9e5}
+.sketch-light.sketch-atlas.art-directed #training .course-explanation .course-audience{border-color:#436275;color:#abc7d7}
+.sketch-light.sketch-atlas.art-directed #training .course-audience strong{color:#e7f3fa}
+.sketch-light.sketch-atlas.art-directed #training .course-learning{border-color:#436275}
+.sketch-light.sketch-atlas.art-directed #training .course-learning h3{font-family:'Dimension Body',sans-serif;color:#efbd7e;font-size:15px;font-weight:700}
+.sketch-light.sketch-atlas.art-directed #training .course-learning ul{color:#c4d9e5}
+.sketch-light.sketch-atlas.art-directed #training .course-learning li::marker{color:#eab878}
+.sketch-light.sketch-atlas.art-directed #training .course-learning>p{color:#b6cfdc;border-color:#426176}
+.sketch-light.sketch-atlas.art-directed #training .course-outcome{color:#b6cfdc;border-color:#426176}
+.sketch-light.sketch-atlas.art-directed #training .course-outcome span,.sketch-light.sketch-atlas.art-directed #training .course-learning>p>span{color:#e9b97e}
+.sketch-light.sketch-atlas.art-directed #training .course-explanation .text-link{color:#173346;background:#edbd7d;border-color:#edbd7d}
+.sketch-light.sketch-atlas.art-directed #training .course-explanation .text-link:hover{color:#102a3b;background:#f6d3a3}
+.sketch-light.sketch-atlas.art-directed #training .training-delivery{background:#1b4158;border:1px solid #446478;border-left:3px solid #edbd7d;border-radius:4px;margin-top:35px;padding:35px 38px}
+.sketch-light.sketch-atlas.art-directed #training .training-delivery h3{color:#f2f7fb}
+.sketch-light.sketch-atlas.art-directed #training .training-delivery .eyebrow{color:#a9c7d7}
+.sketch-light.sketch-atlas.art-directed #training .training-delivery .button{color:#19364a;background:#edbd7d;border-color:#edbd7d}
+.sketch-light.sketch-atlas.art-directed #training .training-delivery .button:hover{background:#f4d09f;border-color:#f4d09f}
+.sketch-light.sketch-atlas.art-directed #training .course-learning>p>strong{color:#ebba7a;font-size:11px}
+.sketch-light.sketch-atlas.art-directed #training .training-delivery>p{color:#bfd5e1}
+.sketch-light.sketch-atlas.art-directed #training .training-delivery .text-link{color:#efc48d;border-color:#638096;background:none}
+.sketch-light.sketch-atlas.art-directed #training .art-graphic .ink{fill:#add9e8;stroke:#8dc4d8}
+.sketch-light.sketch-atlas.art-directed #training .art-graphic .blue{fill:#66aec7;stroke:#85c4d9}
+.sketch-light.sketch-atlas.art-directed #training .art-graphic .pale{fill:#285970;stroke:#77aabf}
+.sketch-light.sketch-atlas.art-directed #training .art-graphic .paper{fill:#163a50;stroke:#a9cbdc}
+.sketch-light.sketch-atlas.art-directed #training .art-graphic .warm{fill:#f0bd77;stroke:#e1ac63}
+.sketch-light.sketch-atlas.art-directed #training .art-graphic .white{stroke:#183e54}
+.sketch-light.sketch-atlas.art-directed #training .art-graphic .line{stroke:#a6d5e4}
+.sketch-light.sketch-atlas.art-directed #training .art-graphic .hair{stroke:#527e96}
+.sketch-light.sketch-atlas.art-directed #training :is(a,summary):focus-visible{outline-color:#f0bd77;outline-offset:5px}
+
+/* A quieter, lighter next chapter gives the courses a clear beginning and end. */
+.sketch-light.sketch-atlas.art-directed #expertise{background:#f2f5f3;color:#193e54;border-top:0}
+.sketch-light.sketch-atlas.art-directed #expertise:before{display:none}
+.sketch-light.sketch-atlas.art-directed #expertise>.section-heading h2{color:#163c53}
+.sketch-light.sketch-atlas.art-directed #expertise>.section-heading .eyebrow{color:#577a8b}
+.sketch-light.sketch-atlas.art-directed #expertise>.section-heading>p{color:#496878}
+.sketch-light.sketch-atlas.art-directed #expertise .retention-intro{background:#e1ebee;border-color:#bfd0d9}
+.sketch-light.sketch-atlas.art-directed #expertise .section-number{color:#4f7a8c}
+.sketch-light.sketch-atlas.art-directed #expertise .retention-intro h3{color:#173f56}
+.sketch-light.sketch-atlas.art-directed #expertise .retention-intro p{color:#476778}
+.sketch-light.sketch-atlas.art-directed #expertise .retention-intro .text-link{color:#245f79}
+.sketch-light.sketch-atlas.art-directed #expertise .retention-detail>div+div{border-color:#bdcfd8}
+.sketch-light.sketch-atlas.art-directed #expertise .retention-detail h4{color:#173f56}
+.sketch-light.sketch-atlas.art-directed #expertise .retention-detail p{color:#486978}
+.sketch-light.sketch-atlas.art-directed #expertise .detail-number{color:#916632}
+.sketch-light.sketch-atlas.art-directed #expertise .outputs-line{border-color:#bdcfd8}
+.sketch-light.sketch-atlas.art-directed #expertise .outputs-line>span{color:#4f6c7b}
+.sketch-light.sketch-atlas.art-directed #expertise .outputs-line>div>span{color:#395f73;background:#e4edef;border-color:#bdcfd8}
+.sketch-light.sketch-atlas.art-directed #expertise .knowledge-signal .ink{fill:#36728c;stroke:#36728c}
+.sketch-light.sketch-atlas.art-directed #expertise .knowledge-signal .line{stroke:#56879b}
+.sketch-light.sketch-atlas.art-directed #expertise .knowledge-signal .hair{stroke:#8baab8}
+
+@media(hover:hover) and (pointer:fine){
+ .sketch-light.sketch-atlas.art-directed #training .course:hover{border-color:#b79971}
+ .sketch-light.sketch-atlas.art-directed #training .course summary:hover{background:#1c465e}
+ .sketch-light.sketch-atlas.art-directed #training .course summary:hover .course-toggle{background:#edbd7d;border-color:#edbd7d;color:#123347}
+}
+@media(max-width:1000px){
+ .sketch-light.sketch-atlas.art-directed #training{padding-block:85px}
+ .sketch-light.sketch-atlas.art-directed #training .section-heading{gap:35px;grid-template-columns:1.2fr 1fr}
+ .sketch-light.sketch-atlas.art-directed #training .section-heading h2{font-size:48px}
+ .sketch-light.sketch-atlas.art-directed #training .course summary{grid-template-columns:48px minmax(0,1fr);grid-template-rows:150px auto;gap:25px 14px;padding:27px}
+ .sketch-light.sketch-atlas.art-directed #training .course .course-number{font-size:35px}
+ .sketch-light.sketch-atlas.art-directed #training .course .course-art{height:150px}
+ .sketch-light.sketch-atlas.art-directed #training .course .course-title{font-size:31px}
+ .sketch-light.sketch-atlas.art-directed #training .course .course-toggle{left:26px;top:102px}
+ .sketch-light.sketch-atlas.art-directed #training .course[open] summary{grid-template-columns:170px minmax(0,1fr);grid-template-rows:auto;gap:28px}
+ .sketch-light.sketch-atlas.art-directed #training .course[open] .course-art{width:170px;height:145px}
+ .sketch-light.sketch-atlas.art-directed #training .course[open] .course-toggle{right:25px;left:auto;top:25px}
+}
+@media(max-width:760px){
+ .sketch-light.sketch-atlas.art-directed .hero.container{background:linear-gradient(157deg,#edf1eb,#dcecf1 47%,#e6eff1 80%,#edf1ed)}
+ .sketch-light.sketch-atlas.art-directed .hero-eye .he-svg{width:108%;filter:none}
+ .sketch-light.sketch-atlas.art-directed #training{padding:72px 24px}
+ .sketch-light.sketch-atlas.art-directed #training .section-heading{grid-template-columns:1fr;gap:25px;margin-bottom:29px}
+ .sketch-light.sketch-atlas.art-directed #training .section-heading h2{font-size:clamp(37px,8.3vw,53px);line-height:1.06}
+ .sketch-light.sketch-atlas.art-directed #training .section-heading>p{font-size:18px}
+ .sketch-light.sketch-atlas.art-directed #training .section-heading .eyebrow{font-size:10px;margin-bottom:20px}
+ .sketch-light.sketch-atlas.art-directed #training .training-intro{padding-bottom:25px}
+ .sketch-light.sketch-atlas.art-directed #training .program-links>a{font-size:17px;min-height:88px}
+ .sketch-light.sketch-atlas.art-directed #training .course summary,.sketch-light.sketch-atlas.art-directed #training .course[open] summary{padding:26px 24px 30px;grid-template-columns:43px minmax(0,1fr);grid-template-rows:148px auto;gap:24px 14px}
+ .sketch-light.sketch-atlas.art-directed #training .course .course-number,.sketch-light.sketch-atlas.art-directed #training .course[open] .course-number{font-size:32px;position:static;grid-column:1;grid-row:1;line-height:1}
+ .sketch-light.sketch-atlas.art-directed #training .course .course-art,.sketch-light.sketch-atlas.art-directed #training .course[open] .course-art{grid-column:2;grid-row:1;width:100%;height:148px;max-width:280px;margin:0}
+ .sketch-light.sketch-atlas.art-directed #training .course .course-summary,.sketch-light.sketch-atlas.art-directed #training .course[open] .course-summary{grid-column:1/-1;grid-row:2;padding:0}
+ .sketch-light.sketch-atlas.art-directed #training .course .course-title,.sketch-light.sketch-atlas.art-directed #training .course[open] .course-title{font-size:31px;min-height:0;line-height:1.12}
+ .sketch-light.sketch-atlas.art-directed #training .course .course-toggle,.sketch-light.sketch-atlas.art-directed #training .course[open] .course-toggle{top:100px;left:24px;right:auto;width:40px;height:40px}
+ .sketch-light.sketch-atlas.art-directed #training .course .course-type{font-size:9px;letter-spacing:.075em}
+ .sketch-light.sketch-atlas.art-directed #training .course-content{padding:26px 24px}
+ .sketch-light.sketch-atlas.art-directed #training .training-delivery{padding:28px 25px}
+}
+@media(max-width:380px){
+ .sketch-light.sketch-atlas.art-directed #training{padding-inline:19px}
+ .sketch-light.sketch-atlas.art-directed #training .course summary,.sketch-light.sketch-atlas.art-directed #training .course[open] summary{padding-inline:20px;grid-template-columns:35px minmax(0,1fr);column-gap:12px}
+ .sketch-light.sketch-atlas.art-directed #training .course .course-title,.sketch-light.sketch-atlas.art-directed #training .course[open] .course-title{font-size:28px}
+ .sketch-light.sketch-atlas.art-directed #training .course .course-toggle,.sketch-light.sketch-atlas.art-directed #training .course[open] .course-toggle{left:19px;width:36px;height:36px}
+}
+@media(prefers-reduced-motion:reduce){
+ .sketch-light.sketch-atlas.art-directed #training .course{transition:none}
+}
+
+</style>
 </head>
 <body class="da sketch-light sketch-atlas art-directed">
   <a class="skip-link" href="#main">Skip to content</a>
