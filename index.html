@@ -648,6 +648,96 @@ html.credential-viewer-open{scrollbar-gutter:stable}
 :is(.retention-ambient,.retention-art,.process-art,.audience-art,.research-symbol,.contact-art) .unified-illustration .line{stroke:#76b2c9}
 :is(.retention-ambient,.retention-art,.process-art,.audience-art,.research-symbol,.contact-art) .unified-illustration .pale{fill:#b6d9e8;stroke:#8ab9ce}
 </style>
+
+<style id="mobile-text-refinement">
+/* Allow text columns to shrink and wrap instead of extending past their cards. */
+.da :is(.hero-copy,.hero-description,.section-heading,.training-intro,.course-summary,.course-content,.course-explanation,.course-learning,.service,.audience-panel,.about-copy,.credential,.recognition-copy,.conference-copy,.contact-options,.footer-inner)>*{min-width:0}
+.da :is(h1,h2,h3,h4,.course-title,.priority-label,.credential-label,.course-type,.eyebrow){overflow-wrap:break-word;word-break:normal}
+.da :is(p,li,.text-link,.contact-email,.priority-subtitle){overflow-wrap:anywhere;word-break:normal}
+.da :is(.button,.text-link){max-width:100%;white-space:normal}
+.da :is(.about-copy,.course-explanation,.recognition-copy,.conference-copy)>p+p{margin-top:1em}
+@media(max-width:800px){
+ .da :is(.section-heading,.course-summary,.course-content,.service-grid,.audience-layout,.audience-tabs,.credentials-grid,.contact-inner,.footer-inner){min-width:0;max-width:100%}
+ .da :is(h2,h3,h4,.course-title){line-height:1.15;letter-spacing:0;text-wrap:pretty}
+ .da :is(.eyebrow,.course-type,.credential-label,.card-index){white-space:normal;line-height:1.6;letter-spacing:.07em}
+ .da .section-heading{row-gap:20px}
+ .da .section-heading h2{margin-bottom:12px}
+ .da .section-heading>p:not(.eyebrow){line-height:1.75}
+ .da .training-intro{gap:20px}
+ .da .course-summary{display:flex;flex-direction:column;gap:14px}
+ .da .course-title,.da .course[open] .course-title{font-size:clamp(28px,7.4vw,38px);line-height:1.15;max-width:100%;padding-right:0}
+ .da .course-preview,.da .course[open] .course-preview{line-height:1.75;margin:0;max-width:100%}
+ .da .course-explanation>p,.da .course-learning li{line-height:1.75}
+ .da .course-learning li+li{margin-top:9px}
+ .da .program-links>a>span{overflow-wrap:anywhere;line-height:1.45}
+ .da .program-links>a{height:auto;align-items:flex-start}
+ .da .service h3{padding-right:0;line-height:1.15;margin-top:24px;margin-bottom:18px}
+ .da .service-index{display:block;min-height:52px;padding-right:76px;white-space:normal;line-height:1.6}
+ .da .service p+.text-link,.da .service ul+.text-link{margin-top:22px}
+ #your-priorities>.section-heading{grid-template-columns:minmax(0,1fr);row-gap:16px}
+ #your-priorities>.section-heading>.eyebrow,#priorities-title{grid-column:1;grid-row:auto}
+ #priorities-title{font-size:clamp(32px,8.6vw,46px);line-height:1.15;max-width:100%}
+ #your-priorities .priority-convergence{grid-column:1;grid-row:auto;justify-self:start;width:88px;aspect-ratio:1}
+ #your-priorities .audience-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #your-priorities .audience-tabs button{min-width:0;height:auto}
+ #your-priorities .audience-tabs .priority-label{font-size:clamp(23px,5.6vw,29px);line-height:1.18;overflow-wrap:anywhere}
+ #your-priorities .audience-tabs .priority-subtitle{font-size:12px;line-height:1.6;margin-top:12px}
+ #your-priorities .audience-panel h3{font-size:clamp(29px,7.5vw,40px);line-height:1.18;padding-right:0}
+ #your-priorities .audience-panel>.eyebrow{padding-right:64px;min-height:36px;line-height:1.6}
+ .da .process-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 24px}
+ .da .process-grid h3{font-size:clamp(24px,6.2vw,31px);line-height:1.2;margin-bottom:14px}
+ .da .process-grid p{line-height:1.75}
+ .da .research-callout h3{line-height:1.2;margin-bottom:18px}
+ .da .credentials-heading{padding-right:0}
+ .da .credentials-art{position:relative;inset:auto;margin-bottom:22px}
+ .da .credentials-heading h3{font-size:clamp(30px,8vw,43px);line-height:1.16}
+ #recognition h4,.credentials-grid>#conference h4{font-size:clamp(32px,8.5vw,45px);line-height:1.17}
+ .da .credential h4{line-height:1.17}
+ #recognition .credential-label,#conference .credential-label{line-height:1.7;letter-spacing:.05em}
+ .da .faq-list summary{font-size:clamp(23px,6vw,29px);line-height:1.35;gap:18px}
+ .da .faq-list summary:after{flex-shrink:0}
+ .da .contact-inner h2{font-size:clamp(35px,9.3vw,52px);line-height:1.14}
+ .da .contact-options{min-width:0;padding-left:0}
+ .da .contact-email{font-size:clamp(22px,6.3vw,29px)!important}
+ .da .footer-inner{flex-wrap:wrap;gap:24px}
+}
+@media(max-width:640px){
+ /* Restore explicit line breaks that earlier mobile rules hid. */
+ .da :is(h1,h2,h3,h4,.course-title) br{display:revert}
+ .da .hero h1{font-size:clamp(64px,18vw,94px);line-height:1.04}
+ .da .hero h1 em{white-space:normal;line-height:1.2;margin-top:12px}
+ .da .hero-description{line-height:1.75}
+ .da .hero-actions{gap:20px}
+ .da .hero-actions>.button{width:100%;text-align:center;justify-content:center}
+ .da .hero-actions>.text-link{line-height:1.6}
+ .da .section-heading h2{font-size:clamp(34px,9vw,48px);line-height:1.15}
+ .da .course summary,.da .course[open] summary{grid-template-columns:minmax(0,1fr) 100px;grid-template-rows:110px auto;gap:20px 16px;padding:24px 20px;height:auto}
+ .da .course-number,.da .course[open] .course-number{grid-column:1;grid-row:1}
+ .da .course-art,.da .course[open] .course-art{grid-column:2;grid-row:1;width:100px;height:94px;margin:0;transform:none;align-self:start}
+ .da .course-summary,.da .course[open] .course-summary{grid-column:1/-1;grid-row:2;min-width:0;padding:0}
+ .da .course-toggle{top:78px;left:20px;right:auto}
+ .da .course-content{grid-template-columns:minmax(0,1fr);padding:24px 20px;gap:24px}
+ .da .training-delivery{grid-template-columns:minmax(0,1fr);gap:22px}
+ .da .training-delivery h3{font-size:clamp(29px,7.7vw,38px);line-height:1.17}
+ .da .layer-panel h3{line-height:1.2}
+ .da .layer-panel p{line-height:1.7}
+ .da .outputs-line>div{display:flex;flex-wrap:wrap;gap:10px}
+ .da .outputs-line>div>span{white-space:normal;line-height:1.5}
+ .da .about-copy>h2{font-size:clamp(36px,9.5vw,50px);line-height:1.15}
+ .da .about-copy .about-subheading{line-height:1.2;margin-top:28px;margin-bottom:16px}
+ .da .about-principles strong{line-height:1.3}
+ .da .about-principles p{margin-top:7px}
+ .da .text-link,.da .button{line-height:1.5}
+ .da .viewer-toolbar>div{min-width:0}
+ .da #viewer-title{font-size:20px;line-height:1.25;overflow-wrap:anywhere}
+}
+@media(max-width:360px){
+ #your-priorities .audience-tabs{grid-template-columns:minmax(0,1fr)}
+ #your-priorities .audience-tabs button{min-height:0;padding:20px}
+ .da .process-grid{grid-template-columns:minmax(0,1fr)}
+ .da .process-grid h3{font-size:29px}
+}
+</style>
 </head>
 <body class="da">
   <a class="skip-link" href="#main">Skip to content</a>
