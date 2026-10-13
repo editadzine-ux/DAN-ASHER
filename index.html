@@ -738,6 +738,64 @@ html.credential-viewer-open{scrollbar-gutter:stable}
  .da .process-grid h3{font-size:29px}
 }
 </style>
+
+<style id="approach-gentle-motion">
+/* A quiet explanatory cycle; only the four illustrations move. */
+#approach .process-art .unified-illustration>*{
+ transform-box:fill-box;transform-origin:center;
+ animation-duration:12s;animation-timing-function:var(--ease-in-out);
+ animation-iteration-count:infinite;animation-play-state:paused;
+}
+#approach .process-art.is-in-view .unified-illustration>*{animation-play-state:running}
+#approach [data-icon="focus"] .pale{animation-name:approach-focus-ring}
+#approach [data-icon="focus"] .warm{animation-name:approach-focus-core}
+#approach [data-icon="extract"] circle{animation-name:approach-extract;animation-delay:2s}
+#approach [data-icon="extract"] circle:nth-of-type(2){animation-delay:2.18s}
+#approach [data-icon="extract"] circle:nth-of-type(3){animation-delay:2.36s}
+#approach [data-icon="extract"] path.warm{animation-name:approach-flow;animation-delay:2.5s}
+#approach [data-icon="structure"] path.warm{animation-name:approach-structure;animation-delay:4s}
+#approach [data-icon="structure"] path.pale{animation-name:approach-structure;animation-delay:4.2s}
+#approach [data-icon="structure"] path.blue{animation-name:approach-structure;animation-delay:4.4s}
+#approach [data-icon="structure"] path.ink{animation-name:approach-structure;animation-delay:4.6s}
+#approach [data-icon="structure"] circle{animation-name:approach-focus-core;animation-delay:4s}
+#approach [data-icon="embed"] .warm{animation-name:approach-embed;animation-delay:6s}
+#approach [data-icon="embed"] .white{animation-name:approach-check;animation-delay:6.35s}
+@keyframes approach-focus-ring{
+ 0%,24%,100%{transform:scale(1);opacity:1}
+ 10%{transform:scale(1.055);opacity:.72}
+}
+@keyframes approach-focus-core{
+ 0%,24%,100%{transform:scale(1);opacity:1}
+ 10%{transform:scale(1.12);opacity:.8}
+}
+@keyframes approach-extract{
+ 0%,24%,100%{transform:translateY(0);opacity:1}
+ 10%{transform:translateY(6px);opacity:.5}
+}
+@keyframes approach-flow{
+ 0%,24%,100%{transform:translateY(0);opacity:1}
+ 10%{transform:translateY(3px);opacity:.65}
+}
+@keyframes approach-structure{
+ 0%,24%,100%{transform:translateY(0);opacity:1}
+ 8%{transform:translateY(-2px);opacity:.58}
+ 16%{transform:translateY(0);opacity:1}
+}
+@keyframes approach-embed{
+ 0%,26%,100%{transform:translateX(0)}
+ 11%{transform:translateX(4px)}
+}
+@keyframes approach-check{
+ 0%,26%,100%{transform:scale(1);opacity:1}
+ 8%{transform:scale(.96);opacity:.55}
+ 16%{transform:scale(1.06);opacity:1}
+}
+.motion-user-paused #approach .process-art .unified-illustration>*,
+.motion-page-hidden #approach .process-art .unified-illustration>*{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){
+ #approach .process-art .unified-illustration>*{animation:none!important;transform:none!important;opacity:1!important}
+}
+</style>
 </head>
 <body class="da">
   <a class="skip-link" href="#main">Skip to content</a>
