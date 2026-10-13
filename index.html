@@ -740,56 +740,45 @@ html.credential-viewer-open{scrollbar-gutter:stable}
 </style>
 
 <style id="approach-gentle-motion">
-/* A quiet explanatory cycle; only the four illustrations move. */
+/* Visible, continuous explanatory motion with no long static hold. */
 #approach .process-art .unified-illustration>*{
  transform-box:fill-box;transform-origin:center;
- animation-duration:12s;animation-timing-function:var(--ease-in-out);
+ animation-duration:3.6s;animation-timing-function:var(--ease-in-out);
  animation-iteration-count:infinite;animation-play-state:paused;
 }
 #approach .process-art.is-in-view .unified-illustration>*{animation-play-state:running}
-#approach [data-icon="focus"] .pale{animation-name:approach-focus-ring}
+#approach [data-icon="focus"] .hair{animation-name:approach-focus-turn;animation-duration:7.2s}
+#approach [data-icon="focus"] .pale{animation-name:approach-focus-ring;animation-delay:-.9s}
 #approach [data-icon="focus"] .warm{animation-name:approach-focus-core}
-#approach [data-icon="extract"] circle{animation-name:approach-extract;animation-delay:2s}
-#approach [data-icon="extract"] circle:nth-of-type(2){animation-delay:2.18s}
-#approach [data-icon="extract"] circle:nth-of-type(3){animation-delay:2.36s}
-#approach [data-icon="extract"] path.warm{animation-name:approach-flow;animation-delay:2.5s}
-#approach [data-icon="structure"] path.warm{animation-name:approach-structure;animation-delay:4s}
-#approach [data-icon="structure"] path.pale{animation-name:approach-structure;animation-delay:4.2s}
-#approach [data-icon="structure"] path.blue{animation-name:approach-structure;animation-delay:4.4s}
-#approach [data-icon="structure"] path.ink{animation-name:approach-structure;animation-delay:4.6s}
-#approach [data-icon="structure"] circle{animation-name:approach-focus-core;animation-delay:4s}
-#approach [data-icon="embed"] .warm{animation-name:approach-embed;animation-delay:6s}
-#approach [data-icon="embed"] .white{animation-name:approach-check;animation-delay:6.35s}
-@keyframes approach-focus-ring{
- 0%,24%,100%{transform:scale(1);opacity:1}
- 10%{transform:scale(1.055);opacity:.72}
-}
-@keyframes approach-focus-core{
- 0%,24%,100%{transform:scale(1);opacity:1}
- 10%{transform:scale(1.12);opacity:.8}
-}
+#approach [data-icon="extract"] circle{animation-name:approach-extract;animation-duration:2.6s;animation-delay:-1.3s}
+#approach [data-icon="extract"] circle:nth-of-type(2){animation-delay:-.85s}
+#approach [data-icon="extract"] circle:nth-of-type(3){animation-delay:-.4s}
+#approach [data-icon="extract"] path.warm{animation-name:approach-flow;animation-duration:2.6s;animation-delay:-.3s}
+#approach [data-icon="structure"] path.warm{animation-name:approach-structure;animation-delay:-1.5s}
+#approach [data-icon="structure"] path.pale{animation-name:approach-structure;animation-delay:-1s}
+#approach [data-icon="structure"] path.blue{animation-name:approach-structure;animation-delay:-.5s}
+#approach [data-icon="structure"] path.ink{animation-name:approach-structure}
+#approach [data-icon="structure"] circle{animation-name:approach-connection;animation-duration:2.4s}
+#approach [data-icon="embed"] .warm{animation-name:approach-embed;animation-delay:-.8s}
+#approach [data-icon="embed"] .white{animation-name:approach-check;animation-delay:-.2s}
+@keyframes approach-focus-turn{0%{transform:rotate(0deg)}50%{transform:rotate(45deg)}100%{transform:rotate(90deg)}}
+@keyframes approach-focus-ring{0%,100%{transform:scale(.94);opacity:1}50%{transform:scale(1.16);opacity:.55}}
+@keyframes approach-focus-core{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.4);opacity:.8}}
 @keyframes approach-extract{
- 0%,24%,100%{transform:translateY(0);opacity:1}
- 10%{transform:translateY(6px);opacity:.5}
+ 0%{transform:translateY(-5px);opacity:.25}
+ 22%{opacity:1}
+ 72%{transform:translateY(18px);opacity:.85}
+ 90%,100%{transform:translateY(22px);opacity:0}
 }
-@keyframes approach-flow{
- 0%,24%,100%{transform:translateY(0);opacity:1}
- 10%{transform:translateY(3px);opacity:.65}
-}
+@keyframes approach-flow{0%,100%{transform:translateY(-5px);opacity:.55}55%{transform:translateY(7px);opacity:1}}
 @keyframes approach-structure{
- 0%,24%,100%{transform:translateY(0);opacity:1}
- 8%{transform:translateY(-2px);opacity:.58}
- 16%{transform:translateY(0);opacity:1}
+ 0%,100%{transform:translateY(0) scale(1);opacity:1}
+ 45%{transform:translateY(-9px) scale(.94);opacity:.45}
+ 75%{transform:translateY(0) scale(1);opacity:1}
 }
-@keyframes approach-embed{
- 0%,26%,100%{transform:translateX(0)}
- 11%{transform:translateX(4px)}
-}
-@keyframes approach-check{
- 0%,26%,100%{transform:scale(1);opacity:1}
- 8%{transform:scale(.96);opacity:.55}
- 16%{transform:scale(1.06);opacity:1}
-}
+@keyframes approach-connection{0%{transform:translateY(-10px);opacity:.25}40%{opacity:1}85%,100%{transform:translateY(12px);opacity:.2}}
+@keyframes approach-embed{0%,100%{transform:translateX(-8px);opacity:.55}55%{transform:translateX(7px);opacity:1}}
+@keyframes approach-check{0%,100%{transform:scale(.94);opacity:.25}55%{transform:scale(1.12);opacity:1}}
 .motion-user-paused #approach .process-art .unified-illustration>*,
 .motion-page-hidden #approach .process-art .unified-illustration>*{animation-play-state:paused!important}
 @media(prefers-reduced-motion:reduce){
